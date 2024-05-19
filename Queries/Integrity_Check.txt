@@ -1,0 +1,63 @@
+-- a.	 Menu Table IC duplicate & null value check: 
+select id from menu
+group by id
+having count(1) > 1;
+
+select id from menu
+where id is null;
+
+-- b.	Dish Table IC Duplicate & Null value check:
+select id from dish
+group by id
+having count(1) > 1;
+
+select id from dish
+where id is null;
+
+-- c.	Menu item Duplicate and IC Check:
+
+select id from menuitem
+group by id
+having count(1) > 1;
+
+select id from menuitem
+where id is null;
+
+
+-- d.	MenuPage Duplicate and Null value Check:
+
+select id from menupage
+group by id
+having count(1) > 1;
+
+select id from menupage
+where id is null;
+
+
+-- e.	Menu foreign key check:
+-- 1. Menu Ids in Menu table missing in Menu Page Table:
+select count(1)  from menu m
+full outer join menupage mp 
+on m.id = mp.menu_id
+where m.id is null;
+
+--  2. Menu IDs in Menu Page missing in Menu Table:
+
+select count(1)  from menu m
+full outer join menupage mp 
+on m.id = mp.menu_id
+where mp.id is null;
+
+
+-- f.	Dish foreign key check:
+-- 1.	Dish Ids Missing from the Menu Item table
+select count(1)  from dish d
+full outer join menuitem mi 
+on d.id = mi.dish_id
+where d.id is null;
+
+-- 2.	Dish Ids missing in the Dish table.
+select count(1)  from dish d
+full outer join menuitem mi 
+on d.id = mi.dish_id
+where mi.id is null;

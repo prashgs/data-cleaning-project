@@ -1,0 +1,259 @@
+#@begin Parallel_OR #@desc Parallel OpenRefine Workflow
+#@param expression:grel:value.replace(/^([^\\w\\s)]|[_])/,_"")
+#@param expression:grel:value.replace(/[?";.*\\[\\]]/,"_")
+#@param expression:value
+#@param expression:grel:value.replace(/([^\\w)]|[_])$/,"_")
+#@param expression:value.replace(/\\s+/,'_')
+#@param expression:value.toNumber()
+#@param expression:value.toTitlecase()
+#@param expression:value.trim()
+#@in name_26
+#@in name_2
+#@in name_12
+#@in lowest_price
+#@in name_27
+#@in name_20
+#@in name_22
+#@in name_1
+#@in name_3
+#@in name_8
+#@in name_18
+#@in name_13
+#@in name_23
+#@in name_9
+#@in name_29
+#@in name_4
+#@in name_5
+#@in name_11
+#@in last_appeared
+#@in name_16
+#@in highest_price
+#@in name_35
+#@in name
+#@in name_10
+#@in name_19
+#@in name_21
+#@in name_25
+#@in name_34
+#@in name_31
+#@in name_17
+#@in name_7
+#@in name_24
+#@in name_15
+#@in first_appeared
+#@in name_14
+#@in name_28
+#@in name_32
+#@in name_30
+#@in name_33
+#@in name_6
+#@out CleanData
+#@begin core/text-transform0 #@desc Text transform on cells in column lowest_price using expression value.toNumber()
+#@param expression:value.toNumber()
+#@in lowest_price
+#@out lowest_price_1
+#@end core/text-transform0
+#@begin core/text-transform1 #@desc Text transform on cells in column highest_price using expression value.toNumber()
+#@param expression:value.toNumber()
+#@in highest_price
+#@out highest_price_1
+#@end core/text-transform1
+#@begin core/text-transform2 #@desc Text transform on cells in column name using expression value.trim()
+#@param expression:value.trim()
+#@in name
+#@out name_1
+#@end core/text-transform2
+#@begin core/mass-edit3 #@desc Mass edit cells in column name
+#@param expression:value
+#@in name_1
+#@out name_2
+#@end core/mass-edit3
+#@begin core/mass-edit4 #@desc Mass edit cells in column name
+#@param expression:value
+#@in name_2
+#@out name_3
+#@end core/mass-edit4
+#@begin core/mass-edit5 #@desc Mass edit cells in column name
+#@param expression:value
+#@in name_3
+#@out name_4
+#@end core/mass-edit5
+#@begin core/mass-edit6 #@desc Mass edit cells in column name
+#@param expression:value
+#@in name_4
+#@out name_5
+#@end core/mass-edit6
+#@begin core/mass-edit7 #@desc Mass edit cells in column name
+#@param expression:value
+#@in name_5
+#@out name_6
+#@end core/mass-edit7
+#@begin core/mass-edit8 #@desc Mass edit cells in column name
+#@param expression:value
+#@in name_6
+#@out name_7
+#@end core/mass-edit8
+#@begin core/mass-edit9 #@desc Mass edit cells in column name
+#@param expression:value
+#@in name_7
+#@out name_8
+#@end core/mass-edit9
+#@begin core/mass-edit10 #@desc Mass edit cells in column name
+#@param expression:value
+#@in name_8
+#@out name_9
+#@end core/mass-edit10
+#@begin core/mass-edit11 #@desc Mass edit cells in column name
+#@param expression:value
+#@in name_9
+#@out name_10
+#@end core/mass-edit11
+#@begin core/mass-edit12 #@desc Mass edit cells in column name
+#@param expression:value
+#@in name_10
+#@out name_11
+#@end core/mass-edit12
+#@begin core/mass-edit13 #@desc Mass edit cells in column name
+#@param expression:value
+#@in name_11
+#@out name_12
+#@end core/mass-edit13
+#@begin core/mass-edit14 #@desc Mass edit cells in column name
+#@param expression:value
+#@in name_12
+#@out name_13
+#@end core/mass-edit14
+#@begin core/mass-edit15 #@desc Mass edit cells in column name
+#@param expression:value
+#@in name_13
+#@out name_14
+#@end core/mass-edit15
+#@begin core/mass-edit16 #@desc Mass edit cells in column name
+#@param expression:value
+#@in name_14
+#@out name_15
+#@end core/mass-edit16
+#@begin core/mass-edit17 #@desc Mass edit cells in column name
+#@param expression:value
+#@in name_15
+#@out name_16
+#@end core/mass-edit17
+#@begin core/mass-edit18 #@desc Mass edit cells in column name
+#@param expression:value
+#@in name_16
+#@out name_17
+#@end core/mass-edit18
+#@begin core/mass-edit19 #@desc Mass edit cells in column name
+#@param expression:value
+#@in name_17
+#@out name_18
+#@end core/mass-edit19
+#@begin core/mass-edit20 #@desc Mass edit cells in column name
+#@param expression:value
+#@in name_18
+#@out name_19
+#@end core/mass-edit20
+#@begin core/mass-edit21 #@desc Mass edit cells in column name
+#@param expression:value
+#@in name_19
+#@out name_20
+#@end core/mass-edit21
+#@begin core/mass-edit22 #@desc Mass edit cells in column name
+#@param expression:value
+#@in name_20
+#@out name_21
+#@end core/mass-edit22
+#@begin core/mass-edit23 #@desc Mass edit cells in column name
+#@param expression:value
+#@in name_21
+#@out name_22
+#@end core/mass-edit23
+#@begin core/mass-edit24 #@desc Mass edit cells in column name
+#@param expression:value
+#@in name_22
+#@out name_23
+#@end core/mass-edit24
+#@begin core/mass-edit25 #@desc Mass edit cells in column name
+#@param expression:value
+#@in name_23
+#@out name_24
+#@end core/mass-edit25
+#@begin core/mass-edit26 #@desc Mass edit cells in column name
+#@param expression:value
+#@in name_24
+#@out name_25
+#@end core/mass-edit26
+#@begin core/mass-edit27 #@desc Mass edit cells in column name
+#@param expression:value
+#@in name_25
+#@out name_26
+#@end core/mass-edit27
+#@begin core/mass-edit28 #@desc Mass edit cells in column name
+#@param expression:value
+#@in name_26
+#@out name_27
+#@end core/mass-edit28
+#@begin core/text-transform29 #@desc Text transform on cells in column name using expression grel:value.replace(/[?\";.*\\[\\]]/,\" \")
+#@param expression:grel:value.replace(/[?";.*\\[\\]]/,"_")
+#@in name_27
+#@out name_28
+#@end core/text-transform29
+#@begin core/text-transform30 #@desc Text transform on cells in column name using expression value.trim()
+#@param expression:value.trim()
+#@in name_28
+#@out name_29
+#@end core/text-transform30
+#@begin core/text-transform31 #@desc Text transform on cells in column name using expression value.replace(/\\s+/,' ')
+#@param expression:value.replace(/\\s+/,'_')
+#@in name_29
+#@out name_30
+#@end core/text-transform31
+#@begin core/text-transform32 #@desc Text transform on cells in column name using expression value.toTitlecase()
+#@param expression:value.toTitlecase()
+#@in name_30
+#@out name_31
+#@end core/text-transform32
+#@begin core/mass-edit33 #@desc Mass edit cells in column name
+#@param expression:value
+#@in name_31
+#@out name_32
+#@end core/mass-edit33
+#@begin core/text-transform34 #@desc Text transform on cells in column first_appeared using expression value.toNumber()
+#@param expression:value.toNumber()
+#@in first_appeared
+#@out first_appeared_1
+#@end core/text-transform34
+#@begin core/text-transform35 #@desc Text transform on cells in column last_appeared using expression value.toNumber()
+#@param expression:value.toNumber()
+#@in last_appeared
+#@out last_appeared_1
+#@end core/text-transform35
+#@begin core/text-transform36 #@desc Text transform on cells in column name using expression grel:value.replace(/^([^\\w\\s)]|[_])/, \"\")
+#@param expression:grel:value.replace(/^([^\\w\\s)]|[_])/,_"")
+#@in name_32
+#@out name_33
+#@end core/text-transform36
+#@begin core/text-transform37 #@desc Text transform on cells in column name using expression value.trim()
+#@param expression:value.trim()
+#@in name_33
+#@out name_34
+#@end core/text-transform37
+#@begin core/text-transform38 #@desc Text transform on cells in column name using expression grel:value.replace(/([^\\w)]|[_])$/,\" \")
+#@param expression:grel:value.replace(/([^\\w)]|[_])$/,"_")
+#@in name_34
+#@out name_35
+#@end core/text-transform38
+#@begin core/text-transform39 #@desc Text transform on cells in column name using expression value.trim()
+#@param expression:value.trim()
+#@in name_35
+#@out name_36
+#@end core/text-transform39
+#@begin CombineDataCleaningChanges
+#@in lowest_price_1
+#@in highest_price_1
+#@in name_36
+#@in first_appeared_1
+#@in last_appeared_1
+#@out CleanData
+#@end CombineDataCleaningChanges
+#@end Parallel_OR

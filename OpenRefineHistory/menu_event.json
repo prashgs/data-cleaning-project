@@ -1,0 +1,1299 @@
+[
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "event",
+    "expression": "value.trim()",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column event using expression value.trim()"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "event",
+    "expression": "value.replace(/\\s+/,' ')",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column event using expression value.replace(/\\s+/,' ')"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "event",
+    "expression": "value.toTitlecase()",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column event using expression value.toTitlecase()"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "event",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "Dinner",
+          "[dinner]",
+          "(dinner)",
+          "Dinner;",
+          "Dinner (?)",
+          "Dinner(?)",
+          "[dinner?]",
+          "(?dinner?)",
+          "Dinner,",
+          "Dinner?",
+          "[?dinner?]",
+          "[dinner ?]"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Dinner"
+      },
+      {
+        "from": [
+          "Lunch",
+          "[lunch]",
+          "(?lunch?)",
+          "Lunch;",
+          "[lunch?]",
+          "(lunch)",
+          "Lunch (?)",
+          "Lunch."
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Lunch"
+      },
+      {
+        "from": [
+          "Breakfast",
+          "[breakfast]",
+          "Breakfast;",
+          "Breakfast (?)",
+          "Breakfast(?)",
+          "[breakfast ?]"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Breakfast"
+      },
+      {
+        "from": [
+          "Daily Menu",
+          "(daily Menu)",
+          "Daily Menu;",
+          "[daily Menu?]",
+          "[daily] Menu"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Daily Menu"
+      },
+      {
+        "from": [
+          "Supper",
+          "Supper (?)",
+          "Supper(?)",
+          "Supper;"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Supper"
+      },
+      {
+        "from": [
+          "Carte Du Jour",
+          "(carte Du Jour)",
+          "Carte Du Jour;"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Carte Du Jour"
+      },
+      {
+        "from": [
+          "Lunch & Dinner",
+          "Lunch; Dinner",
+          "[?dinner? - Lunch?]"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Lunch & Dinner"
+      },
+      {
+        "from": [
+          "Fruhstuck-breakfast",
+          "Fruhstuck/breakfast",
+          "Fruhstuck/breakfast;"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Fruhstuck-breakfast"
+      },
+      {
+        "from": [
+          "Daily Menu, Dinner",
+          "Daily Dinner Menu",
+          "Daily Menu; Dinner"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Daily Menu, Dinner"
+      },
+      {
+        "from": [
+          "A La Carte; Dinner",
+          "Dinner A La Carte",
+          "Dinner; A La Carte"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "A La Carte; Dinner"
+      },
+      {
+        "from": [
+          "Daily Lunch Menu",
+          "Daily Menu, Lunch",
+          "Daily Menu; Lunch"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Daily Lunch Menu"
+      },
+      {
+        "from": [
+          "Lunch Or Dinner",
+          "Dinner Or Lunch",
+          "Lunch &/or Dinner"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Lunch Or Dinner"
+      },
+      {
+        "from": [
+          "Luncheon",
+          "[luncheon]",
+          "Luncheon;"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Luncheon"
+      },
+      {
+        "from": [
+          "Anniversary Dinner",
+          "Anniversary Dinner?",
+          "Anniversary [dinner]"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Anniversary Dinner"
+      },
+      {
+        "from": [
+          "Mittagessen",
+          "Mittag-essen",
+          "Mittagessen;"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Mittagessen"
+      },
+      {
+        "from": [
+          "Inspection Trip - Luncheon",
+          "Inspection Trip, Luncheon",
+          "Inspection Trip, Luncheon;"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Inspection Trip - Luncheon"
+      },
+      {
+        "from": [
+          "Banquet And Reception",
+          "Reception And Banquet"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Banquet And Reception"
+      },
+      {
+        "from": [
+          "Table D'hote Dinner",
+          "Dinner Table D'hote"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Table D'hote Dinner"
+      },
+      {
+        "from": [
+          "Afternoon Tea",
+          "Afternoon Tea ["
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Afternoon Tea"
+      },
+      {
+        "from": [
+          "Dinner - Second Cabin",
+          "Dinner Second Cabin"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Dinner - Second Cabin"
+      },
+      {
+        "from": [
+          "Inspection Trip, Dinner",
+          "Inspection Trip, Dinner;"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Inspection Trip, Dinner"
+      },
+      {
+        "from": [
+          "Mittagessen/dinner",
+          "Mittagessen[dinner]"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Mittagessen/dinner"
+      },
+      {
+        "from": [
+          "Wine List",
+          "Wine List;"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Wine List"
+      },
+      {
+        "from": [
+          "Dinner,second Cabin",
+          "Dinner-second Cabin"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Dinner,second Cabin"
+      },
+      {
+        "from": [
+          "Reunion",
+          "[?reunion?]"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Reunion"
+      },
+      {
+        "from": [
+          "Luncheon Table D'hote",
+          "Table D'hote Luncheon"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Luncheon Table D'hote"
+      },
+      {
+        "from": [
+          "Ladies Night",
+          "Ladies' Night"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Ladies Night"
+      },
+      {
+        "from": [
+          "Breakfast And Supper",
+          "Supper And Breakfast"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Breakfast And Supper"
+      },
+      {
+        "from": [
+          "Wedding",
+          "Wedding(?)"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Wedding"
+      },
+      {
+        "from": [
+          "Reception",
+          "[reception]"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Reception"
+      },
+      {
+        "from": [
+          "Washington's Birthday Banquet",
+          "Banquet (washington's Birthday?)"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Washington's Birthday Banquet"
+      },
+      {
+        "from": [
+          "Abend-essen",
+          "Abendessen"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Abend-essen"
+      },
+      {
+        "from": [
+          "Menu",
+          "Menu;"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Menu"
+      },
+      {
+        "from": [
+          "Annual Dinner",
+          "[annual Dinner?]"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Annual Dinner"
+      },
+      {
+        "from": [
+          "Breakfast (?) Held By Nordeutscher Lloyd Bremen At On Board The Ss George Washington",
+          "Breakfast Held By Nordeutscher Lloyd Bremen At On Board The Ss George Washington"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Breakfast Held By Nordeutscher Lloyd Bremen At On Board The Ss George Washington"
+      },
+      {
+        "from": [
+          "Diner",
+          "[diner]"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Diner"
+      },
+      {
+        "from": [
+          "Dinner To Above",
+          "Dinner To Above;"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Dinner To Above"
+      },
+      {
+        "from": [
+          "Daily Lunch;",
+          "Daily Lunch"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Daily Lunch;"
+      },
+      {
+        "from": [
+          "Luncheon A La Carte",
+          "Luncheon, A La Carte"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Luncheon A La Carte"
+      },
+      {
+        "from": [
+          "Lincoln's Birthday Dinner",
+          "Dinner, Lincolns Birthday"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Lincoln's Birthday Dinner"
+      },
+      {
+        "from": [
+          "New Year's Dinner",
+          "New Years Dinner"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "New Year's Dinner"
+      },
+      {
+        "from": [
+          "Fifth Annual Dinner",
+          "Dinner, Fifth Annual"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Fifth Annual Dinner"
+      },
+      {
+        "from": [
+          "St. Valentine's Day Dinner",
+          "St. Valentines Day Dinner"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "St. Valentine's Day Dinner"
+      },
+      {
+        "from": [
+          "Fruhstuck/lunch",
+          "Fruhstuck-lunch"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Fruhstuck/lunch"
+      },
+      {
+        "from": [
+          "New Year's Day Dinner",
+          "New Years Day Dinner"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "New Year's Day Dinner"
+      },
+      {
+        "from": [
+          "Eighth Annual Banquet",
+          "Eighth Annual Banquet'"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Eighth Annual Banquet"
+      },
+      {
+        "from": [
+          "Daily Menu, Breakfast",
+          "Daily Breakfast Menu"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Daily Menu, Breakfast"
+      },
+      {
+        "from": [
+          "Daily Menu, Luncheon",
+          "Daily Luncheon Menu"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Daily Menu, Luncheon"
+      },
+      {
+        "from": [
+          "Private Dinner",
+          "[private Dinner?]"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Private Dinner"
+      },
+      {
+        "from": [
+          "Inspection Trip, Breakfast",
+          "Inspection Trip - Breakfast"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Inspection Trip, Breakfast"
+      },
+      {
+        "from": [
+          "Mittagessen - Dinner",
+          "Mittagessen [dinner]"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Mittagessen - Dinner"
+      },
+      {
+        "from": [
+          "Lunch-dinner",
+          "Lunch;dinner"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Lunch-dinner"
+      },
+      {
+        "from": [
+          "Middag/dinner",
+          "Middag-dinner"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Middag/dinner"
+      },
+      {
+        "from": [
+          "Daily Bill Of Fare",
+          "Daily Bill Of Fare;"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Daily Bill Of Fare"
+      }
+    ],
+    "description": "Mass edit cells in column event"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "event",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "Dinner/diner",
+          "Diner/dinner",
+          "Dinner, Diner"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Dinner/diner"
+      },
+      {
+        "from": [
+          "Lunch & Dinner",
+          "Lunch-dinner"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Lunch & Dinner"
+      },
+      {
+        "from": [
+          "Daily Menu, Luncheon",
+          "Daily Menu,luncheon"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Daily Menu, Luncheon"
+      },
+      {
+        "from": [
+          "Wedding Dinner",
+          "(wedding)dinner"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Wedding Dinner"
+      },
+      {
+        "from": [
+          "Breakfast - Second Cabin",
+          "Breakfast-second Cabin"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Breakfast - Second Cabin"
+      },
+      {
+        "from": [
+          "Breakfast,lunch & Dinner",
+          "Breakfast; Lunch; Dinner"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Breakfast,lunch & Dinner"
+      },
+      {
+        "from": [
+          "Daily Menu, Supper",
+          "Daily Menu,supper"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Daily Menu, Supper"
+      },
+      {
+        "from": [
+          "Mittagessen - Dinner",
+          "Mittagessen/dinner"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Mittagessen - Dinner"
+      },
+      {
+        "from": [
+          "Dinner",
+          "Dinnner"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Dinner"
+      },
+      {
+        "from": [
+          "Dejeuner Fourchette/luncheon",
+          "Dejeuner Fourchette/ Luncheon"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Dejeuner Fourchette/luncheon"
+      },
+      {
+        "from": [
+          "(dinner Dance)",
+          "Dinner-dance"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Dinner-dance"
+      },
+      {
+        "from": [
+          "Dinner - Second Cabin",
+          "Dinner,second Cabin"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Dinner - Second Cabin"
+      },
+      {
+        "from": [
+          "Fourth Of July Dinner",
+          "Fourth Ofjuly Dinner"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Fourth Of July Dinner"
+      },
+      {
+        "from": [
+          "Daily Menu, Dinner",
+          "Daily Menu,dinner"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Daily Menu, Dinner"
+      }
+    ],
+    "description": "Mass edit cells in column event"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "event",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "Dinner",
+          "Dinner/diner",
+          "Diner"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Dinner"
+      },
+      {
+        "from": [
+          "Mittagessen",
+          "Mitagessen",
+          "Mittagesen"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Mittagessen"
+      },
+      {
+        "from": [
+          "11th Annual Banquet",
+          "11nth Annual Banquet",
+          "Banquet,11th Annual"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "11th Annual Banquet"
+      },
+      {
+        "from": [
+          "Lunch And/or Dinner",
+          "Luncheon And Dinner"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Lunch And/or Dinner"
+      },
+      {
+        "from": [
+          "New Year's Day Dinner",
+          "New Year's Dinner"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "New Year's Day Dinner"
+      },
+      {
+        "from": [
+          "Lunch A La Carte",
+          "Lunch ˆ La Carte"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Lunch A La Carte"
+      },
+      {
+        "from": [
+          "7nth Annual Banquet",
+          "7th Annual Banquet"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "7nth Annual Banquet"
+      },
+      {
+        "from": [
+          "Bill Of Fare/dinner",
+          "Dinner Bill Of Fare"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Bill Of Fare/dinner"
+      },
+      {
+        "from": [
+          "Regular Menu",
+          "General Menu"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Regular Menu"
+      },
+      {
+        "from": [
+          "10nth Anniversary Dinner",
+          "10th Anniversary Dinner"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "10nth Anniversary Dinner"
+      },
+      {
+        "from": [
+          "Dinner Specials",
+          "Special Dinner"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Dinner Specials"
+      },
+      {
+        "from": [
+          "Dinner To Stick Togethr Club",
+          "Dinner To The Stick Together Club"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Dinner To Stick Togethr Club"
+      },
+      {
+        "from": [
+          "Luncheon - Second Cabin",
+          "Lunch Second Cabin"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Luncheon - Second Cabin"
+      },
+      {
+        "from": [
+          "Christmas Dinner",
+          "Christman Dinner"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Christmas Dinner"
+      },
+      {
+        "from": [
+          "Breakfast - A La Carte",
+          "Breakfast ˆ La Carte"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Breakfast - A La Carte"
+      },
+      {
+        "from": [
+          "Daily Menu, Breakfast",
+          "Daily Breakfast & Dinner Menu"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Daily Menu, Breakfast"
+      },
+      {
+        "from": [
+          "Inspection Trip, Dinner",
+          "Inspection Trip - Diner"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Inspection Trip, Dinner"
+      },
+      {
+        "from": [
+          "Thanksgiving Dinner",
+          "Thnaksgiving Dinner"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Thanksgiving Dinner"
+      },
+      {
+        "from": [
+          "Supper Menu",
+          "Supper Men"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Supper Menu"
+      }
+    ],
+    "description": "Mass edit cells in column event"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "event",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "Fruhstuck/lunch",
+          "Fruhstuck-luncheon"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Fruhstuck/lunch"
+      },
+      {
+        "from": [
+          "Dinner",
+          "Dnner"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Dinner"
+      },
+      {
+        "from": [
+          "Christmas Dinner",
+          "Christmas Dinnr"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Christmas Dinner"
+      }
+    ],
+    "description": "Mass edit cells in column event"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "event",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "Eighth Annual Dinner",
+          "Eight Annual Dinner",
+          "Eigth Annual Dinner"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Eighth Annual Dinner"
+      },
+      {
+        "from": [
+          "Lunch And Dinner",
+          "Luncheon, Dejeuner",
+          "Lumch And Dinner"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Lunch And Dinner"
+      },
+      {
+        "from": [
+          "Supper",
+          "Souper"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Supper"
+      },
+      {
+        "from": [
+          "Luncheon Menu",
+          "Lunch Menu"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Luncheon Menu"
+      },
+      {
+        "from": [
+          "Luncheon",
+          "Lincheon"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Luncheon"
+      },
+      {
+        "from": [
+          "Dinner ˆ La Carte",
+          "Dinner-a La Carte"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Dinner-a La Carte"
+      },
+      {
+        "from": [
+          "Supper At A Ball",
+          "Supper At The Ball"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Supper At A Ball"
+      },
+      {
+        "from": [
+          "Banquet",
+          "Banchetto"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Banquet"
+      }
+    ],
+    "description": "Mass edit cells in column event"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "event",
+    "expression": "grel:value.replace(/[?()\"]/,\"\")",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column event using expression grel:value.replace(/[?()\"]/,\"\")"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "event",
+    "expression": "grel:value.replace(/[\\[\\]]/,\"\")",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column event using expression grel:value.replace(/[\\[\\]]/,\"\")"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "event",
+    "expression": "value.trim()",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column event using expression value.trim()"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "event",
+    "expression": "value.replace(/\\s+/,' ')",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column event using expression value.replace(/\\s+/,' ')"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "event",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "14nth Annual Dinner",
+          "14th Annual Dinner"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "14nth Annual Dinner"
+      },
+      {
+        "from": [
+          "Fourth Of July Dinner",
+          "July Fourth Dinner"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Fourth Of July Dinner"
+      },
+      {
+        "from": [
+          "Twelfth Annual Banquet",
+          "Twelfth Banquet"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Twelfth Annual Banquet"
+      },
+      {
+        "from": [
+          "Carte Du Jour-diner",
+          "Carte Du Jour/dinner"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Carte Du Jour-diner"
+      },
+      {
+        "from": [
+          "Breakfast,lunch & Dinner",
+          "Breakfast, Lunch And Dinner"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Breakfast,lunch & Dinner"
+      },
+      {
+        "from": [
+          "9nth Annual Dinner",
+          "9th Annual Dinner"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "9nth Annual Dinner"
+      },
+      {
+        "from": [
+          "20th Anniversary Dinner",
+          "Dinner,20th Anniversary"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "20th Anniversary Dinner"
+      }
+    ],
+    "description": "Mass edit cells in column event"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "event",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "Day Dinner",
+          "Day's Dinner"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Day Dinner"
+      }
+    ],
+    "description": "Mass edit cells in column event"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "event",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "Fourth Annual Dinner",
+          "Fourth Annusl Dinner"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Fourth Annual Dinner"
+      },
+      {
+        "from": [
+          "Fifth Annual Dinner",
+          "Fifh Annual Dinner"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Fifth Annual Dinner"
+      },
+      {
+        "from": [
+          "Table D'hote",
+          "Table D'hoter"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Table D'hote"
+      },
+      {
+        "from": [
+          "Dinner O Prince And Princess Of Wales",
+          "Dinner To Prince And Princess Of Wales"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Dinner To Prince And Princess Of Wales"
+      },
+      {
+        "from": [
+          "Mittagessen",
+          "Mittagesses"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Mittagessen"
+      },
+      {
+        "from": [
+          "Daily Menu",
+          "Daily Menus"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Daily Menu"
+      },
+      {
+        "from": [
+          "Washington's Birthday",
+          "Washingt0n's Birthday"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Washington's Birthday"
+      }
+    ],
+    "description": "Mass edit cells in column event"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "event",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "Luncheon/dejeuner Fourchette",
+          "Dejeuner Fourchette/luncheon"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Luncheon/dejeuner Fourchette"
+      }
+    ],
+    "description": "Mass edit cells in column event"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "event",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "Saint Nicholas Day",
+          "Saint Nicholas Day dinner"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Saint Nicholas Day dinner"
+      },
+      {
+        "from": [
+          "Fourth Of July Dinner",
+          "Fourth Of July Dinner Menu"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Fourth Of July Dinner"
+      }
+    ],
+    "description": "Mass edit cells in column event"
+  }
+]

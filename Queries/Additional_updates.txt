@@ -1,0 +1,67 @@
+-- 	Use SQL to detect and remove duplicate records
+
+-- a.	Menu Table:
+-- 1.	Identify the Blank or Null or Not Given in the name column Menu Table and update them by “NA”
+
+update menu 
+set name = 'NA'
+where  name is null or trim(name) ='' or name = 'Not Given';
+
+-- 2.Identify the Blank or Null or Not Given in the Occasion column in  Menu Table and update them by “NA”
+
+update menu 
+set occasion = 'NA'
+where occasion is null or trim(occasion)  ='' or occasion = 'Not Given';
+
+
+-- 3. Identify the Blank or Null or Not Given in the Event column in  Menu Table and update them by “NA”
+update menu 
+set event = 'NA'
+where event is null or  trim(event) ='' or event = 'Not Given';
+
+-- 4.  Identify the Blank or Null or Not Given in the Venue column in  Menu Table and update them by “NA”
+
+update menu 
+set venue = 'NA'
+where venue is null or trim(venue) ='' or venue = 'Not Given';
+
+-- 5.  Identify the Blank or Null in the Date column in  Menu Table and update them by “9999-12-31”
+update menu 
+set date = '9999-12-31'
+where date is null;
+
+
+-- 6.  Identify the Blank or Null in the Locatiom column in  Menu Table and update them by “NA”
+update menu 
+set location = 'NA'
+where location is null or trim(location)='' or location = 'Not Given';
+
+
+
+
+-- b. Dish Table:
+
+update dish 
+set name = 'NA'
+where name is null or trim(name) ='' or name = 'Not Given';
+
+
+-- 2.	Identify the Blank or Null or Not Given in the lowest_price column of Dish Table and update them by 0.
+update dish
+set lowest_price= 0
+where lowest_price is null;
+
+
+-- 3.	Identify the Blank or Null or Not Given in the highest_price column of Dish Table and update them by 0.
+update dish
+set highest_price = 0
+where highest_price is null;
+
+
+-- c. MenuItem Table:
+
+-- 1.	Identify the Blank or Null value in price columns of MenuItem Table and update with 0.
+
+update MenuItem
+set price  = 0
+where price is null or trim(price) = "";

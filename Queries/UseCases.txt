@@ -1,0 +1,54 @@
+-- U1 Use cases
+-- a.	What dishes were served as “Breakfast” meal for “Easter” event at a “Commercial” venue organized in descending order of price in US dollars? 
+
+select di.name, mi.price from menu mn
+join menuPage mp ON mp.menu_id= mn.id
+join menuitem mi on  mi.menu_page_id = mp.id
+join dish di on di.id = mi.dish_id
+where UPPER(mn.event)='BREAKFAST' and UPPER(mn.occasion) = 'EASTER' and UPPER(mn.VENUE)='COMMERCIAL'  
+and UPPER(mn.currency) ='DOLLARS' AND mi.price <>''
+group by di.name, mi.price
+order by mi.price desc;
+
+-- b.	What are the different styles of eggs served for Breakfast that were on the menu in 1900s and 2000s at different venues?
+
+select di.name, mn.venue from menu mn
+join menuPage mp ON mp.menu_id= mn.id
+join menuitem mi on  mi.menu_page_id = mp.id
+join dish di on di.id = mi.dish_id
+where UPPER(di.name) like '%EGG%' AND UPPER(mn.event)='BREAKFAST'
+and  mn.date > date("1899-12-31") and  mn.date < date("2001-12-31") AND mn.venue <> "NA"
+group by di.name, mn.venue;
+
+
+
+-- c.	What are the different varieties of wines were on the menu in 1900s and 2000s which were served at different venues for “Easter”?
+select di.name, mn.venue from menu mn
+join menuPage mp ON mp.menu_id= mn.id
+join menuitem mi on  mi.menu_page_id = mp.id
+join dish di on di.id = mi.dish_id
+where UPPER(di.name) like '%WINE%'AND UPPER(mn.occasion)='EASTER' AND mn.venue <> "NA"
+and mn.date > date("1899-12-31") and  mn.date < date("2001-12-31");
+
+
+-- d.	Between 1990 and 2000, what are the restaurants that served traditional dishes starting from 1900s in Lunch or Dinner? 
+select mn.location from menu mn
+join menuPage mp ON mp.menu_id= mn.id
+join menuitem mi on  mi.menu_page_id = mp.id
+join dish di on di.id = mi.dish_id
+where  (UPPER(mn.event)='DINNER' Or UPPER(mn.event)='LUNCH')  AND 
+mn.date >= date("1990-01-01") AND mn.date <= date("2000-12-31") and
+di.first_appeared >=1900
+group by mn.location;
+
+
+--*************************************************************************************************************************************
+
+-- U0 User case
+-- What are the top 10 high prices of menu items across all menus? 
+
+select high_price from MenuItem mi 
+where high_price <>''
+group by high_price
+order by high_price DESC 
+limit 10

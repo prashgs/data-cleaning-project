@@ -1,0 +1,1773 @@
+[
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "name",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "[Restaurant name and/or location not given]",
+          "Restaurant name and/or location not given]",
+          "[Restaurant name and/or location not given] ",
+          "Restaurant name and/or location not given",
+          "[Restaurant name and/or location not given"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "[Not Given]"
+      },
+      {
+        "from": [
+          "The Merchant's Club",
+          "The Merchants Club",
+          "The Merchants' Club"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "The Merchant's Club"
+      },
+      {
+        "from": [
+          "Hotel Imperial",
+          "Imperial Hotel",
+          "Impérial Hotel"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Hotel Imperial"
+      },
+      {
+        "from": [
+          "Delmonicos",
+          "Delmonico's",
+          "Delmonicos."
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Delmonicos"
+      },
+      {
+        "from": [
+          "Riggs'",
+          "Rigg's",
+          "Riggs"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Riggs"
+      },
+      {
+        "from": [
+          "Childs",
+          "Child's"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Childs"
+      },
+      {
+        "from": [
+          "Hotel Marie Antoinette",
+          "Marie Antoinette Hotel"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Hotel Marie Antoinette"
+      },
+      {
+        "from": [
+          "Healy's Forty-second Street restaurant",
+          "Healy's Forty-second Street Restaurant"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Healy's Forty-second Street restaurant"
+      },
+      {
+        "from": [
+          "Hotel Knickerbocker",
+          "Knickerbocker Hotel"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Hotel Knickerbocker"
+      },
+      {
+        "from": [
+          "Met-Life Building",
+          "MetLife Building"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Met-Life Building"
+      },
+      {
+        "from": [
+          "Guffanti's Table d'Hôte",
+          "Guffanti's Table d'Hôte "
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Guffanti's Table d'Hôte"
+      },
+      {
+        "from": [
+          "[Not Given]",
+          "[Not given]"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "[Not Given]"
+      },
+      {
+        "from": [
+          "S.S. \"Frederik VIII\"",
+          "S.S. Frederik VIII"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "S.S. \"Frederik VIII\""
+      },
+      {
+        "from": [
+          "Fairmont Hotel",
+          "Hotel Fairmont"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Fairmont Hotel"
+      },
+      {
+        "from": [
+          "South Ferry Hotel",
+          " South Ferry Hotel"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "South Ferry Hotel"
+      },
+      {
+        "from": [
+          "Copley-Plaza Hotel",
+          "Hotel Copley-Plaza"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Copley-Plaza Hotel"
+      },
+      {
+        "from": [
+          "St. Denis Hotel",
+          "Hotel St. Denis"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "St. Denis Hotel"
+      },
+      {
+        "from": [
+          "Cosmopolitan Hotel",
+          "Cosmopolitan... Hotel"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Cosmopolitan Hotel"
+      },
+      {
+        "from": [
+          "Hotel Pontchartrain",
+          "Pontchartrain Hotel"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Hotel Pontchartrain"
+      },
+      {
+        "from": [
+          "Hotel Astor",
+          "Astor Hotel"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Hotel Astor"
+      },
+      {
+        "from": [
+          "Palace Hotel",
+          "Palace Hôtel"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Palace Hotel"
+      },
+      {
+        "from": [
+          "Hotel DuPont",
+          "Hotel duPont"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Hotel DuPont"
+      },
+      {
+        "from": [
+          "Rigg's Twentieth Street Restaurant",
+          "Riggs' Twentieth Street Restaurant"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Rigg's Twentieth Street Restaurant"
+      },
+      {
+        "from": [
+          "Adams' Restaurant",
+          "Adam's Restaurant"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Adams' Restaurant"
+      },
+      {
+        "from": [
+          "Fraunces' Tavern",
+          "Fraunces Tavern"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Fraunces' Tavern"
+      },
+      {
+        "from": [
+          "Grocers Hall",
+          "Grocers' Hall"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Grocers Hall"
+      },
+      {
+        "from": [
+          "Hotel Marlborough",
+          "Hotel Marlborough "
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Hotel Marlborough"
+      },
+      {
+        "from": [
+          "Hotel  Baltimore",
+          "Hotel Baltimore"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Hotel  Baltimore"
+      },
+      {
+        "from": [
+          "Mercantile Lunch Co.",
+          "Mercantile lunch Co."
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Mercantile Lunch Co."
+      },
+      {
+        "from": [
+          "Hotel Statler",
+          "Statler Hotel"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Hotel Statler"
+      },
+      {
+        "from": [
+          "U.S.S. New York",
+          "U.S.S. New York (?)"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "U.S.S. New York"
+      },
+      {
+        "from": [
+          "Lafayette Hotel",
+          "Hotel Lafayette"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Lafayette Hotel"
+      },
+      {
+        "from": [
+          "The New Willard Hotel",
+          "The New Willard Hotel."
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "The New Willard Hotel"
+      },
+      {
+        "from": [
+          "Elks Club House",
+          "Elks' Club House"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Elks Club House"
+      },
+      {
+        "from": [
+          "Hofbrau Haus",
+          "Hofbräu Haus"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Hofbrau Haus"
+      },
+      {
+        "from": [
+          "Merchant's Club",
+          "Merchants Club"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Merchant's Club"
+      },
+      {
+        "from": [
+          "Hotel Savoy",
+          "Savoy Hotel"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Hotel Savoy"
+      },
+      {
+        "from": [
+          "Café Boulevard",
+          "Cafe Boulevard"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Café Boulevard"
+      }
+    ],
+    "description": "Mass edit cells in column name"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "name",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "U. S. S. New York",
+          "U.S.S. New York"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "U. S. S. New York"
+      },
+      {
+        "from": [
+          "U. S. S. Florida",
+          "U.S.S. Florida"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "U. S. S. Florida"
+      },
+      {
+        "from": [
+          "A.H. Meyer Rathskeller",
+          "A.H.Meyer Rathskeller"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "A.H. Meyer Rathskeller"
+      },
+      {
+        "from": [
+          "Hofbrau Haus",
+          "Hof Brau Haus"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Hofbrau Haus"
+      },
+      {
+        "from": [
+          "Copley-Plaza Hotel",
+          "Copley Plaza Hotel"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Copley-Plaza Hotel"
+      },
+      {
+        "from": [
+          "Bellevue - Stratford",
+          "Bellevue-Stratford"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Bellevue - Stratford"
+      },
+      {
+        "from": [
+          "U. S. S. Wyoming",
+          "U.S.S. Wyoming"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "U. S. S. Wyoming"
+      },
+      {
+        "from": [
+          "Ritz Carlton Hotel",
+          "Ritz-Carlton Hotel"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Ritz Carlton Hotel"
+      },
+      {
+        "from": [
+          "Ritz Carlton",
+          "Ritz-Carlton"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Ritz Carlton"
+      },
+      {
+        "from": [
+          "Waldorf Astoria",
+          "Waldorf-Astoria"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Waldorf Astoria"
+      },
+      {
+        "from": [
+          "Café des Beaux Arts",
+          "Café des Beaux-Arts"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Café des Beaux Arts"
+      },
+      {
+        "from": [
+          "Copley Plaza",
+          "Copley-Plaza"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Copley Plaza"
+      },
+      {
+        "from": [
+          "Hotel La Salle",
+          "Hotel LaSalle"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Hotel La Salle"
+      }
+    ],
+    "description": "Mass edit cells in column name"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "name",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "The Bellevue-Stratford",
+          "Bellevue-Stratford Hotel",
+          "The Bellvue-Stratford"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "The Bellevue-Stratford"
+      },
+      {
+        "from": [
+          "The Hotel Ten Eyck",
+          "Ten Eyck Hotel"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "The Hotel Ten Eyck"
+      },
+      {
+        "from": [
+          "Cortland",
+          "Cortlandt"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Cortland"
+      },
+      {
+        "from": [
+          "Westchester Restaurant",
+          "The Westchester Restaurant"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Westchester Restaurant"
+      },
+      {
+        "from": [
+          "Huether & Steffens",
+          "Heuther & Steffens"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Huether & Steffens"
+      },
+      {
+        "from": [
+          "Joe's Restaurant",
+          "Jeo's Restaurant"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Joe's Restaurant"
+      },
+      {
+        "from": [
+          "The New Willard Hotel",
+          "New Willard Hotel"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "The New Willard Hotel"
+      },
+      {
+        "from": [
+          "The Adolphus",
+          "The Adolphus Hotel"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "The Adolphus"
+      },
+      {
+        "from": [
+          "Hotel Breevort",
+          "Hotel Brevoort"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Hotel Breevort"
+      },
+      {
+        "from": [
+          "Wiehl & Widmann",
+          "Wiehl & Widman"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Wiehl & Widmann"
+      },
+      {
+        "from": [
+          "Chateau Lake Louise",
+          "Lake Louise Chalet"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Chateau Lake Louise"
+      },
+      {
+        "from": [
+          "The Merchant's Club",
+          "Merchant's Club"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "The Merchant's Club"
+      },
+      {
+        "from": [
+          "The Blackstone",
+          "Blackstone Hotel"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "The Blackstone"
+      },
+      {
+        "from": [
+          "Copley-Plaza Hotel",
+          "The Copley-Plaza"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Copley-Plaza Hotel"
+      },
+      {
+        "from": [
+          "Hanover Lunch Co.",
+          "Hanover Lunch"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Hanover Lunch Co."
+      },
+      {
+        "from": [
+          "The Biltmore",
+          "Hotel Biltmore"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "The Biltmore"
+      },
+      {
+        "from": [
+          "Hollenden Hotel",
+          "The Hollenden"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Hollenden Hotel"
+      },
+      {
+        "from": [
+          "Brown Palace Hotel",
+          "The Brown Palace Hotel"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Brown Palace Hotel"
+      },
+      {
+        "from": [
+          "The St. Charles",
+          "St. Charles"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "The St. Charles"
+      },
+      {
+        "from": [
+          "Healey's",
+          "Healy's"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Healey's"
+      }
+    ],
+    "description": "Mass edit cells in column name"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "name",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "Ritz Carlton",
+          "Ritz Carlton Hotel",
+          "Ritz Carlton New York",
+          "Ritz-Carlton Restaurant"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Ritz Carlton New York"
+      },
+      {
+        "from": [
+          "Pennsylvania Lunch",
+          "Pennsylvania Lines",
+          "Pennsylvania Lines: West of Pittsburgh"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Pennsylvania Lunch"
+      },
+      {
+        "from": [
+          "Waldorf Astoria",
+          "Waldorf-Astoria: South Gate",
+          "Waldorf-Astoria: Grand Ball Room"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Waldorf Astoria"
+      },
+      {
+        "from": [
+          "Hotel Pontchartrain",
+          "Hotel Ponchartrain"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Hotel Pontchartrain"
+      },
+      {
+        "from": [
+          "Horn & Hardart Company",
+          "Horn & Hardart Company Dining Rooms"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Horn & Hardart Company"
+      },
+      {
+        "from": [
+          "Pennsylvania Railroad",
+          "Pennsylvania Railroad Restaurants"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Pennsylvania Railroad"
+      },
+      {
+        "from": [
+          "Café Safran",
+          "Café Savarin"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Café Safran"
+      },
+      {
+        "from": [
+          "Hofbrau Restaurant: Würzburger Hofbrau",
+          "Hofbraü Restaurant"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Hofbraü Restaurant"
+      },
+      {
+        "from": [
+          "The Union League Club",
+          "The Union League Club House"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "The Union League Club"
+      },
+      {
+        "from": [
+          "Aldine Club Rooma",
+          "Aldine Club Rooms"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Aldine Club Rooma"
+      },
+      {
+        "from": [
+          "Travers Island",
+          "Travers Island Club House"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Travers Island"
+      },
+      {
+        "from": [
+          "Spilker's Restaurant and Grill Room",
+          "Spilker's Restaurant and Café"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Spilker's Restaurant and Grill Room"
+      },
+      {
+        "from": [
+          "Young Man's Christian Association",
+          "Young Men's Christian Association"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Young Man's Christian Association"
+      },
+      {
+        "from": [
+          "Broadway Central Hotel",
+          "Broadway Central Hotel New York"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Broadway Central Hotel"
+      },
+      {
+        "from": [
+          "Hotel Marlborough Grill",
+          "Hotel Marlborough"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Hotel Marlborough Grill"
+      },
+      {
+        "from": [
+          "Metropolitan Life Insurance Company",
+          "Metropolitan Life Insurance Company Tuberculosis Sanatorium for Employees"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Metropolitan Life Insurance Company"
+      },
+      {
+        "from": [
+          "Crawford House",
+          "Crawford's"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Crawford House"
+      },
+      {
+        "from": [
+          "Gutmann's Café and Restaurant",
+          "Gutmann's Café and Restaurant Luncheon"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Gutmann's Café and Restaurant"
+      },
+      {
+        "from": [
+          "University Club",
+          "University Club of Brooklyn"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "University Club"
+      },
+      {
+        "from": [
+          "Republican Club",
+          "Republican Club of the City of New York"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Republican Club"
+      },
+      {
+        "from": [
+          "The Cortland",
+          "The Cortlandt"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "The Cortland"
+      },
+      {
+        "from": [
+          "Greenhut-Siegel Cooper Co.",
+          "Greenhut-Siegel Cooper Co. Tea Room"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Greenhut-Siegel Cooper Co."
+      }
+    ],
+    "description": "Mass edit cells in column name"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "name",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "Long Island Business College",
+          "Long Island Business College Hall",
+          "Long Island Business College South"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Long Island Business College"
+      },
+      {
+        "from": [
+          "Great Northern Hotel",
+          "Great Northern",
+          "Great Northern Railway"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Great Northern Hotel"
+      }
+    ],
+    "description": "Mass edit cells in column name"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "name",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "Daylight Luncheon",
+          "Daylight Luncheon: Third Floor"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Daylight Luncheon"
+      },
+      {
+        "from": [
+          "The New Willard",
+          "The New Willard Hotel"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "The New Willard"
+      },
+      {
+        "from": [
+          "Copley-Plaza Hotel",
+          "Copley Plaza"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Copley-Plaza Hotel"
+      },
+      {
+        "from": [
+          "The New Mills Hotel",
+          "The New Mills Hotel Restaurant and Lunch Counter"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "The New Mills Hotel"
+      },
+      {
+        "from": [
+          "The Bancroft",
+          "The Bancroft Hotel"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "The Bancroft"
+      },
+      {
+        "from": [
+          "Fleischmann's Vienna Restaurant",
+          "Fleischmann's"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Fleischmann's Vienna Restaurant"
+      },
+      {
+        "from": [
+          "The Washington",
+          "The Washington Hotel"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "The Washington"
+      },
+      {
+        "from": [
+          "Aldine Club",
+          "Aldine Club Rooma"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Aldine Club"
+      },
+      {
+        "from": [
+          "St. Denis Hotel",
+          "St. Denis Hotel: Taylor's Restaurant"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "St. Denis Hotel"
+      },
+      {
+        "from": [
+          "Hazeltine's",
+          "Hazeltine's Inc."
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Hazeltine's"
+      }
+    ],
+    "description": "Mass edit cells in column name"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "name",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "Greenhut-Siegel Cooper Co.",
+          "Greehut-Siegel Cooper Co."
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Greenhut-Siegel Cooper Co."
+      }
+    ],
+    "description": "Mass edit cells in column name"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "name",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "Huether & Steffens",
+          "Huether and Steffens"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Huether & Steffens"
+      },
+      {
+        "from": [
+          "R.H. Macy & Co.",
+          "R.H. Macy and Co."
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "R.H. Macy & Co."
+      }
+    ],
+    "description": "Mass edit cells in column name"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "name",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "The Blackstone",
+          "Blackstone"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "The Blackstone"
+      },
+      {
+        "from": [
+          "Harvard Club",
+          "Harvard Hall"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Harvard Club"
+      },
+      {
+        "from": [
+          "Brooklyn Club",
+          "The Brooklyn Club"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Brooklyn Club"
+      },
+      {
+        "from": [
+          "Pennsylvania Lunch",
+          "The Pennsylvania Lunch"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Pennsylvania Lunch"
+      },
+      {
+        "from": [
+          "Hotel Imperial",
+          "The Imperial"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Hotel Imperial"
+      },
+      {
+        "from": [
+          "The New Willard",
+          "New Willard"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "The New Willard"
+      },
+      {
+        "from": [
+          "Buffalo Club",
+          "The Buffalo Club"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Buffalo Club"
+      }
+    ],
+    "description": "Mass edit cells in column name"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "name",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "The Beekman Café Co.",
+          "Beekman Café Co."
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "The Beekman Café Co."
+      },
+      {
+        "from": [
+          "The Washington",
+          "Hotel Washington"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "The Washington"
+      },
+      {
+        "from": [
+          "The Cortland",
+          "Cortland"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "The Cortland"
+      },
+      {
+        "from": [
+          "Club House",
+          "The Club House"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Club House"
+      },
+      {
+        "from": [
+          "The Washington",
+          "Washington"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "The Washington"
+      },
+      {
+        "from": [
+          "Holland Hall",
+          "Holland House"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Holland Hall"
+      },
+      {
+        "from": [
+          "University Club",
+          "The University Club"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "University Club"
+      },
+      {
+        "from": [
+          "Aldine Club",
+          "The Aldine Club"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Aldine Club"
+      }
+    ],
+    "description": "Mass edit cells in column name"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "name",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "Metropolitan Club",
+          "The Metropolitan Club"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Metropolitan Club"
+      },
+      {
+        "from": [
+          "The Union League Club",
+          "Union League Club"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "The Union League Club"
+      },
+      {
+        "from": [
+          "Richmond",
+          "The Richmond"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Richmond"
+      },
+      {
+        "from": [
+          "Yale Club",
+          "The Yale Club"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Yale Club"
+      }
+    ],
+    "description": "Mass edit cells in column name"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "name",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "Pabst",
+          "The Pabst"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Pabst"
+      },
+      {
+        "from": [
+          "Plaza",
+          "The Plaza"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Plaza"
+      },
+      {
+        "from": [
+          "Hotel Plaza",
+          "The Plaza"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Hotel Plaza"
+      },
+      {
+        "from": [
+          "The Mansion House",
+          "Mansion House"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "The Mansion House"
+      }
+    ],
+    "description": "Mass edit cells in column name"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "name",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "Lord & Taylor Restaurant and Tea Rooms",
+          "Lord & Taylor",
+          "Lord & Taylor Tea Rooms"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Lord & Taylor Restaurant and Tea Rooms"
+      },
+      {
+        "from": [
+          "Columbia University Club",
+          "The Columbia University Club"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Columbia University Club"
+      },
+      {
+        "from": [
+          "New York Athletic Club",
+          "The New York Athletic Club of the City of New York"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "New York Athletic Club"
+      },
+      {
+        "from": [
+          "The Union League Club",
+          "Union Club"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "The Union League Club"
+      },
+      {
+        "from": [
+          "City Midday Club",
+          "Mid Day Club"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "City Midday Club"
+      },
+      {
+        "from": [
+          "Lord & Taylor",
+          "Lord & Taylor Tea Rooms"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Lord & Taylor"
+      },
+      {
+        "from": [
+          "Lord & Taylor Restaurant and Tea Rooms",
+          "Lord & Taylor Tea Rooms"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Lord & Taylor Restaurant and Tea Rooms"
+      },
+      {
+        "from": [
+          "The Bellevue-Stratford",
+          "Bellevue - Stratford"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "The Bellevue-Stratford"
+      },
+      {
+        "from": [
+          "Gibson's",
+          "Gibson's Restaurant"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Gibson's"
+      },
+      {
+        "from": [
+          "The White",
+          "Whites"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "The White"
+      },
+      {
+        "from": [
+          "Hannaberry & Moran",
+          "The Hannaberry & Moran Dining Room"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Hannaberry & Moran"
+      }
+    ],
+    "description": "Mass edit cells in column name"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "name",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "West End Hall",
+          "West End Shore Club"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "West End Hall"
+      },
+      {
+        "from": [
+          "Seelbach",
+          "Seelbach Hotel"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Seelbach"
+      },
+      {
+        "from": [
+          "Lexington Hotel",
+          "Lexington Opera House"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Lexington Hotel"
+      },
+      {
+        "from": [
+          "Hotel Imperial",
+          "Imperial"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Hotel Imperial"
+      },
+      {
+        "from": [
+          "St. Charles Hotel",
+          "The St. Charles"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "St. Charles Hotel"
+      },
+      {
+        "from": [
+          "\"Victoria Luise\"",
+          "Hotel Victoria"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Hotel Victoria"
+      },
+      {
+        "from": [
+          "Friars' Club",
+          "Friars' Club House"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Friars' Club"
+      },
+      {
+        "from": [
+          "St. Anthony Hotel",
+          "The St. Anthony"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "St. Anthony Hotel"
+      },
+      {
+        "from": [
+          "American Houe",
+          "New American House"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "American Houe"
+      },
+      {
+        "from": [
+          "Brooklyn Masonic Temple",
+          "Masonic Temple"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Brooklyn Masonic Temple"
+      },
+      {
+        "from": [
+          "Café Lafayette",
+          "Lafayette Hotel"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Café Lafayette"
+      },
+      {
+        "from": [
+          "Deutsche Liederkranz",
+          "German Liederkranz"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Deutsche Liederkranz"
+      }
+    ],
+    "description": "Mass edit cells in column name"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "name",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "Buffalo Club",
+          "The Buffalo Orpheus"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Buffalo Club"
+      },
+      {
+        "from": [
+          "The Bellevue-Stratford",
+          "Bellevue Hotel"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "The Bellevue-Stratford"
+      },
+      {
+        "from": [
+          "Kaiser-Hof Restaurant",
+          "Kaiserhof Hotel"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Kaiser-Hof Restaurant"
+      },
+      {
+        "from": [
+          "Viemeister's Café and Restaurant",
+          "Viemeister's"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Viemeister's Café and Restaurant"
+      },
+      {
+        "from": [
+          "Little Roma Restaurant",
+          "Roma Restaurant"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Little Roma Restaurant"
+      },
+      {
+        "from": [
+          "Richmond Restaurant",
+          "Richmond"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Richmond Restaurant"
+      },
+      {
+        "from": [
+          "Metropolitan Club",
+          "Metropolitan Life Insurance Company"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Metropolitan Club"
+      },
+      {
+        "from": [
+          "Hotel St. Regis",
+          "St. Regis"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Hotel St. Regis"
+      },
+      {
+        "from": [
+          "A.H. Meyer Rathskeller",
+          "Rathskeller"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "A.H. Meyer Rathskeller"
+      },
+      {
+        "from": [
+          "The Washington",
+          "The New Washington Hotel"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "The Washington"
+      },
+      {
+        "from": [
+          "New York Press Club",
+          "Press Club"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "New York Press Club"
+      }
+    ],
+    "description": "Mass edit cells in column name"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "name",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "Harrison Town Hall",
+          "Town Hall"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Harrison Town Hall"
+      },
+      {
+        "from": [
+          "Hotel Alexandria",
+          "Royal Alexandra Hotel"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Hotel Alexandria"
+      },
+      {
+        "from": [
+          "Greenhut-Siegel Cooper Co.",
+          "Greenhut's"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Greenhut-Siegel Cooper Co."
+      }
+    ],
+    "description": "Mass edit cells in column name"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "name",
+    "expression": "grel:value.replace(/[?;]/,\" \")",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column name using expression grel:value.replace(/[?;]/,\" \")"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "name",
+    "expression": "value.trim()",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column name using expression value.trim()"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "name",
+    "expression": "value.replace(/\\s+/,' ')",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column name using expression value.replace(/\\s+/,' ')"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "name",
+    "expression": "grel:value.replace(/[\\[\\]]/,\"\")",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column name using expression grel:value.replace(/[\\[\\]]/,\"\")"
+  }
+]

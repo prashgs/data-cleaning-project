@@ -1,0 +1,46 @@
+a.	Menu Table:
+CREATE OR REPLACE TABLE menu (
+id BIGINT PRIMARY KEY NOT NULL,
+name TEXT,
+event TEXT,
+venue TEXT,
+occasion TEXT,
+date DATE,
+location TEXT,
+currency TEXT,
+status TEXT
+);
+
+b.	Menu Page Table:
+	CREATE OR REPLACE TABLE menupage (
+id BIGINT PRIMARY KEY NOT NULL,
+menu_id BIGINT REFERENCES menu (id),
+page_number STRING,
+image_id STRING,
+full_height STRING,
+full_width STRING,
+uuid STRING
+);
+
+c.	Dish Table:
+	CREATE OR REPLACE TABLE dish (
+id BIGINT PRIMARY KEY NOT NULL,
+name TEXT,
+first_appeared DATETIME,
+last_appeared DATETIME,
+lowest_price DOUBLE,
+highest_price DOUBLE
+);
+
+d.	Menu Item Table:
+CREATE or replace TABLE menuitem (
+id BIGINT PRIMARY KEY NOT NULL,
+menu_page_id BIGINT REFERENCES menupage (id),
+price DOUBLE,
+high_price DOUBLE,
+dish_id BIGINT REFERENCES dish (id),
+created_at timestamp,
+updated_at timestamp,
+xpos DOUBLE,
+ypos DOUBLE
+);

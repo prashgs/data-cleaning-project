@@ -1,0 +1,1485 @@
+[
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "occasion",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "OTHER (SOC) ",
+          "OTHER (SOC ) ",
+          "OTHER (SOC )",
+          "OTHER (SOC)",
+          "OTHER  SOC   ",
+          "OTHER  (SOC) ",
+          "OTHER  SOC ",
+          "OTHER (SOC.)",
+          "OTHER )SOC) ",
+          "OTHER,  SOC   "
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "OTHER (SOCIAL) "
+      },
+      {
+        "from": [
+          "COMPL.",
+          " COMPL   ",
+          " COMPL  ",
+          "COMPL  ",
+          " COMPL ",
+          " COMPL. ",
+          "COMPL ( )",
+          "COMPL ( ) ",
+          "COMPL( ) "
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "COMPLEMENTARY"
+      },
+      {
+        "from": [
+          "SECULAR HOLIDAY ",
+          "SECULAR HOLIDAY",
+          "SECULAR HOLIDAY. HOLIDAY",
+          "SECULAR HOLIDAY. HOLIDAY ",
+          "SECULAR HOLIDAY HOLIDAY",
+          "SECULAR HOLIDAY HOLIDAY "
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "SECULAR HOLIDAY "
+      },
+      {
+        "from": [
+          "ANNIVERSARY ",
+          "ANNIVERSARY ( ) ",
+          "ANNIVERSARY( ) ",
+          "ANNIVERSARY",
+          "ANNIVERSARY."
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "ANNIVERSARY "
+      },
+      {
+        "from": [
+          "OTHER (ANNIVERSARY) ",
+          "OTHER (ANNIVERSARY)",
+          "OTHER (ANNIVERSARY )",
+          "OTHER - ANNIVERSARY",
+          "OTHER {ANNIVERSARY} "
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "OTHER (ANNIVERSARY) "
+      },
+      {
+        "from": [
+          " ANNIV   ",
+          "  ANNIV   ",
+          " ANNIV  ",
+          "(ANNIV ) ",
+          "(ANNIV) "
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": " ANNIVERSARY   "
+      },
+      {
+        "from": [
+          "SOC ",
+          " SOC  ",
+          " SOC ",
+          "(SOC )",
+          "(SOC) "
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "SOCIAL"
+      },
+      {
+        "from": [
+          "OTHER (MEETING) ",
+          "OTHER (MEETING ) ",
+          "OTHER (MEETING)",
+          "OTHER (MEETING )"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "OTHER (MEETING) "
+      },
+      {
+        "from": [
+          "OTHER (SOCIAL )",
+          "OTHER  SOCIAL  ",
+          "OTHER (SOCIAL ) ",
+          "OTHER (SOCIAL) "
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "OTHER (SOCIAL)"
+      },
+      {
+        "from": [
+          "OTHER (ANNUAL EVENT)",
+          "OTHER (ANNUAL EVENT) ",
+          "OTHER {ANNUAL EVENT} ",
+          "OTHER, ANNUAL EVENT"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "OTHER (ANNUAL EVENT)"
+      },
+      {
+        "from": [
+          "PATRIOTIC HOLIDAY ",
+          "PATRIOTIC HOLIDAY",
+          "PATRIOTIC HOLIDAY.",
+          "PATRIOTIC HOLIDAY. HOLIDAY"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "PATRIOTIC HOLIDAY "
+      },
+      {
+        "from": [
+          "RITE ",
+          "RITE",
+          "(RITE)",
+          "(RITE) "
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "RITE "
+      },
+      {
+        "from": [
+          "OTHER (COMMEMORATIVE) ",
+          "OTHER  COMMEMORATIVE ",
+          "OTHER (COMMEMORATIVE )",
+          "OTHER (COMMEMORATIVE)"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "OTHER (COMMEMORATIVE) "
+      },
+      {
+        "from": [
+          "DAILY ",
+          "DAILY",
+          " DAILY ",
+          "DAILY  "
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "DAILY "
+      },
+      {
+        "from": [
+          "ANNUAL",
+          "ANNUAL ",
+          " ANNUAL "
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "ANNUAL"
+      },
+      {
+        "from": [
+          "OTHER (REUNION) ",
+          "(OTHER - REUNION ) ",
+          "OTHER  (REUNION) "
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "OTHER (REUNION) "
+      },
+      {
+        "from": [
+          "DAILY MENU ",
+          "DAILY MENU",
+          "(DAILY MENU)"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "DAILY MENU "
+      },
+      {
+        "from": [
+          "OTHER (ANNIV)",
+          "OTHER (ANNIV) ",
+          "OTHER (ANNIV )"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "OTHER (ANNIVERSARY)"
+      },
+      {
+        "from": [
+          "OTHER",
+          "OTHER ",
+          "OTHER,"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "OTHER"
+      },
+      {
+        "from": [
+          "RELIG. HOLIDAY",
+          "RELIG. HOLIDAY ",
+          "RELIG HOLIDAY "
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "RELIG. HOLIDAY"
+      },
+      {
+        "from": [
+          "(SOCIAL)",
+          "(SOCIAL )",
+          "SOCIAL"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "SOCIAL"
+      },
+      {
+        "from": [
+          "ANNUAL DINNER",
+          "ANNUAL DINNER ",
+          "ANNUAl DINNER"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "ANNUAL DINNER"
+      },
+      {
+        "from": [
+          "  REUNION   ",
+          " RE-UNION ",
+          " REUNION "
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "  REUNION   "
+      },
+      {
+        "from": [
+          " ",
+          "   "
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": " "
+      },
+      {
+        "from": [
+          "(COMPL FOR MAHARAJA SCINDIYA)",
+          "COMPL  FOR MAHARAJA SCINDIYA"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "(COMPL FOR MAHARAJA SCINDIYA)"
+      },
+      {
+        "from": [
+          "SECULAR HOLIDAY.HOLIDAY",
+          "SECULAR HOLIDAY.HOLIDAY "
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "SECULAR HOLIDAY.HOLIDAY"
+      },
+      {
+        "from": [
+          "ANNUAL EVENT",
+          "ANNUAL EVENT "
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "ANNUAL EVENT"
+      },
+      {
+        "from": [
+          "ANIV ",
+          " ANIV   "
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "ANNIVERSARY "
+      },
+      {
+        "from": [
+          "OTHER (DAILY DATED MENU) ",
+          "OTHER (DATED DAILY MENU) "
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "OTHER (DAILY DATED MENU) "
+      },
+      {
+        "from": [
+          "POL ",
+          " POL  "
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "POL "
+      },
+      {
+        "from": [
+          "OTHER (DAILY MENU) ",
+          "OTHER (DAILY MENU)"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "OTHER (DAILY MENU) "
+      },
+      {
+        "from": [
+          "SATURDAY DINNER",
+          "SATURDAY DINNER "
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "SATURDAY DINNER"
+      },
+      {
+        "from": [
+          "NATIONAL EVENT",
+          "NATIONAL EVENT "
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "NATIONAL EVENT"
+      },
+      {
+        "from": [
+          "PAT ",
+          "PAT"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "PAT "
+      },
+      {
+        "from": [
+          "OTHER (COMMEMOATIVE)",
+          "OTHER (COMMEMOATIVE) "
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "OTHER (COMMEMORATIVE)"
+      },
+      {
+        "from": [
+          "DAILY MEAL",
+          "DAILY MEAL "
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "DAILY MEAL"
+      },
+      {
+        "from": [
+          "DINNER",
+          "DINNER "
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "DINNER"
+      },
+      {
+        "from": [
+          "SUNDAY DINNER",
+          "SUNDAY DINNER "
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "SUNDAY DINNER"
+      },
+      {
+        "from": [
+          "ETHNIC HOLIDAY",
+          " ETHNIC HOLIDAY "
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "ETHNIC HOLIDAY"
+      },
+      {
+        "from": [
+          "SUNDAY",
+          "SUNDAY "
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "SUNDAY"
+      },
+      {
+        "from": [
+          "BREAKFAST",
+          "BREAKFAST "
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "BREAKFAST"
+      },
+      {
+        "from": [
+          "OTHER (ANNUAL MEETING) ",
+          "OTHER {ANNUAL MEETING} "
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "OTHER (ANNUAL MEETING) "
+      },
+      {
+        "from": [
+          "BANQUET ",
+          "BANQUET"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "BANQUET "
+      },
+      {
+        "from": [
+          "ETH ",
+          "ETH"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "ETH "
+      },
+      {
+        "from": [
+          "ANNIVERSARYERSARY",
+          "ANNIVERSARYERSARY "
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "ANNIVERSARY"
+      },
+      {
+        "from": [
+          "OTHER (DAILY) ",
+          "OTHER (DAILY)"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "OTHER (DAILY) "
+      },
+      {
+        "from": [
+          "DAILY DINNER",
+          "DAILY DINNER "
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "DAILY DINNER"
+      },
+      {
+        "from": [
+          "SEMI-ANNUAL",
+          "SEMI-ANNUAL "
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "SEMI-ANNUAL"
+      }
+    ],
+    "description": "Mass edit cells in column occasion"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "occasion",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "ANNIVERSARY ",
+          " ANNIVERSARY   ",
+          "ANNIVERSARY"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "ANNIVERSARY "
+      },
+      {
+        "from": [
+          "OTHER (SOCIAL) ",
+          "OTHER (SOCIAL)"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "OTHER (SOCIAL) "
+      },
+      {
+        "from": [
+          "OTHER (COMMEMORATIVE) ",
+          "OTHER (COMMEMORATIVE)"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "OTHER (COMMEMORATIVE) "
+      },
+      {
+        "from": [
+          "OTHER (ANNIVERSARY) ",
+          "OTHER (ANNIVERSARY)"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "OTHER (ANNIVERSARY) "
+      }
+    ],
+    "description": "Mass edit cells in column occasion"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "occasion",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "OTHER (ANNUAL EVENT)",
+          "OTHER,ANNUAL EVENT"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "OTHER (ANNUAL EVENT)"
+      },
+      {
+        "from": [
+          "DAILY MENU ",
+          "DAILYMENU"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "DAILY MENU "
+      },
+      {
+        "from": [
+          "OTHER (COMMEMORATION) ",
+          "OTHER,Commemoration"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "OTHER (COMMEMORATION) "
+      },
+      {
+        "from": [
+          "OTHER (ANNUAL BANQUET) ",
+          "OTHER,Annual Banquet"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "OTHER (ANNUAL BANQUET) "
+      },
+      {
+        "from": [
+          "OTHER (ANNUAL MEETING) ",
+          "OTHER,Annual Meeting"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "OTHER (ANNUAL MEETING) "
+      },
+      {
+        "from": [
+          "RELIG. HOLIDAY",
+          "RELIG.HOLIDAY"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "RELIG. HOLIDAY"
+      },
+      {
+        "from": [
+          "OTHER (ANNUAL DINNER) ",
+          "OTHER,,annual dinner"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "OTHER (ANNUAL DINNER) "
+      },
+      {
+        "from": [
+          "TRIP OF PRES. McKINLEY, HIS CABINET & GUESTS ",
+          "TRIP OF PRES. McKINLEY,HIS CABINET & GUESTS"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "TRIP OF PRES. McKINLEY, HIS CABINET & GUESTS "
+      }
+    ],
+    "description": "Mass edit cells in column occasion"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "occasion",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "PATRIOTIC HOLIDAY ",
+          "PATRIOTIC HOLIDAY.  LOCAL ",
+          "PATRIOTIC HOLIDAY.HOLIDAY",
+          "PATRIOTIC HOLIDAYIOTIC HOLIDAY"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "PATRIOTIC HOLIDAY "
+      },
+      {
+        "from": [
+          "OTHER (DAILY MENU) ",
+          "OTHER (DAILY HOTEL MENU) ",
+          "OTHER (DAILY DATED MENU) ",
+          "OTHEER (DAILY HOTEL MENU) "
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "OTHER (DAILY MENU) "
+      },
+      {
+        "from": [
+          "ANNIVERSARY ",
+          "ANIVERSARY",
+          "ANNIVERSARYESARY"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "ANNIVERSARY "
+      },
+      {
+        "from": [
+          "SECULAR HOLIDAY ",
+          "SECULAR HOLIDAY.HOLIDAY",
+          "SECULAR HOLIDAYL"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "SECULAR HOLIDAY "
+      },
+      {
+        "from": [
+          "OTHER (REUNION) ",
+          "OTHER (REUNTION) "
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "OTHER (REUNION) "
+      },
+      {
+        "from": [
+          "0THER (SOC )",
+          "OTHER (S0C )"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "OTHER (SOCIAL)"
+      }
+    ],
+    "description": "Mass edit cells in column occasion"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "occasion",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "OTHER (DAILY DATED MENU FOR HOTEL) ",
+          "OTHER (DAILY MENU FOR HOTEL) "
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "OTHER (DAILY DATED MENU) "
+      },
+      {
+        "from": [
+          "OTHER (COMMEMORATION) ",
+          "OTHER (COMMEMOATION) "
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "OTHER (COMMEMORATION) "
+      },
+      {
+        "from": [
+          "OTHER (SOCIAL) ",
+          "OTHER (SOCIAL)"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "OTHER (SOCIAL) "
+      }
+    ],
+    "description": "Mass edit cells in column occasion"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "occasion",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "OTHER (ANNIVERSARY) ",
+          "OTHER,ANNIVERSARY REUNION"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "OTHER (ANNIVERSARY) "
+      },
+      {
+        "from": [
+          "ANNIVERSARY, COMP",
+          "ANNIVERSARY/COMPL "
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "ANNIVERSARY, COMPLEMENTARY"
+      },
+      {
+        "from": [
+          "TESTIMONIAL DINNER",
+          "TESTIMONIAL DINNER TO HON. BUCKLEY"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "TESTIMONIAL DINNER"
+      }
+    ],
+    "description": "Mass edit cells in column occasion"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "occasion",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "COMPLEMENTARY",
+          "COMPLIMENTARY"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "COMPLEMENTARY"
+      },
+      {
+        "from": [
+          "OTHER (COMMEMORATIVE) ",
+          "OTHER   COMMEMORTIVE  "
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "OTHER (COMMEMORATIVE) "
+      },
+      {
+        "from": [
+          "ANNUAL",
+          "AMNNUAL "
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "ANNUAL"
+      },
+      {
+        "from": [
+          "ANNIVERSARY ",
+          "113 ANNIVERSARY"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "ANNIVERSARY "
+      },
+      {
+        "from": [
+          "C0MPL ",
+          "CIMPL "
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "COMPLEMENTARY "
+      }
+    ],
+    "description": "Mass edit cells in column occasion"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "occasion",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "COMPLEMENTARY",
+          "COMPLEMENTARY "
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "COMPLEMENTARY"
+      }
+    ],
+    "description": "Mass edit cells in column occasion"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "occasion",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "OTHER (COMMEMORATIVE) ",
+          "OTHER (COMMEMORATIE) "
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "OTHER (COMMEMORATIVE) "
+      },
+      {
+        "from": [
+          "OTHER (ANNIVERSARY) ",
+          "OTHER (ANNIVERARY) "
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "OTHER (ANNIVERSARY) "
+      }
+    ],
+    "description": "Mass edit cells in column occasion"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "occasion",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "OTHER (COMMEMORATIVE) ",
+          "OTHER (COMMEMORATION) "
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "OTHER (COMMEMORATIVE) "
+      }
+    ],
+    "description": "Mass edit cells in column occasion"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "occasion",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "OTHER (COMMEMORATIVE) ",
+          "0THER  COMMEMORATIVE "
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "OTHER (COMMEMORATIVE) "
+      },
+      {
+        "from": [
+          "DAILY MENU ",
+          "DAILY MEAL"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "DAILY MENU "
+      },
+      {
+        "from": [
+          "(COMMEMOATIVE )",
+          "(COMMEMORATIVE) "
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "COMMEMORATIVE "
+      },
+      {
+        "from": [
+          "13TH ANNIVERSARY",
+          "27NTH ANNIVERSARY"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "ANNIVERSARY"
+      }
+    ],
+    "description": "Mass edit cells in column occasion"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "occasion",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "ANNIVERSARY ",
+          "ANNIVERSARY"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "ANNIVERSARY "
+      }
+    ],
+    "description": "Mass edit cells in column occasion"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "occasion",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "OHER (SOC) ",
+          "OTHE (SOC ) ",
+          "OTHR (SOC) "
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "OHER (SOCIAL) "
+      },
+      {
+        "from": [
+          "LUNCHEON",
+          "LUNCH"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "LUNCHEON"
+      }
+    ],
+    "description": "Mass edit cells in column occasion"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "occasion",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "OTHER (SOCIAL) ",
+          "OHER (SOCIAL) "
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "OTHER (SOCIAL) "
+      }
+    ],
+    "description": "Mass edit cells in column occasion"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "occasion",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "RELIGIOUS HOLIDAY",
+          "RELIG. HOLIDAY"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "RELIGIOUS HOLIDAY"
+      },
+      {
+        "from": [
+          "COM ",
+          "COMP ( )"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "COMPLEMENTARY"
+      }
+    ],
+    "description": "Mass edit cells in column occasion"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "occasion",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "PATRIOTIC HOLIDAY ",
+          "PATRIOTIC HOLIDAY  LINCOLN'S BIRTHDAY ",
+          "PATRIOTIC HOLIDAY (164TH ANNIVERSARY OLD STYLE OF THE BIRTH OF COLONEL GEORGE WASHINGTON ",
+          "PATRIOTIC HOLIDAY,NATIONAL EVENT"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "PATRIOTIC HOLIDAY "
+      },
+      {
+        "from": [
+          "OTHER (COMMEMORATIVE) ",
+          "OTHER (COMMEMORATING RESUMPTION OF BUSINESS AFTER EARTHQUAKE AND FIRE) ",
+          "OTHER (COMMEMORATION OF A BULL FIGHT BY FAMOUS TORREODOR) ",
+          "OTHER {COMMEMOATION OF DEATH OF U.S. GRANT}"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "OTHER (COMMEMORATIVE) "
+      },
+      {
+        "from": [
+          "TESTIMONIAL DINNER",
+          "TESTIMONIAL"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "TESTIMONIAL DINNER"
+      }
+    ],
+    "description": "Mass edit cells in column occasion"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "occasion",
+    "expression": "value.trim()",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column occasion using expression value.trim()"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "occasion",
+    "expression": "value.replace(/\\s+/,' ')",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column occasion using expression value.replace(/\\s+/,' ')"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "occasion",
+    "expression": "grel:value.replace(/[()]/,\" \")",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column occasion using expression grel:value.replace(/[()]/,\" \")"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "occasion",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "OTHER  DAILY MENU AT SEA ",
+          "OTHER  DAILY RESTAURANT MENU "
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "OTHER  DAILY MENU"
+      },
+      {
+        "from": [
+          "OTHER  DAILY MENU ",
+          "OTHER  DAILY DATED MENU "
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "OTHER  DAILY MENU "
+      },
+      {
+        "from": [
+          "ANNIVERSARY, COMPLEMENTARY",
+          "COMPLIMENTARY/TESTIMONIAL,ANNIVERSARY"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "ANNIVERSARY, COMPLEMENTARY"
+      }
+    ],
+    "description": "Mass edit cells in column occasion"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "occasion",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "OTHER  DAILY MENU ",
+          "OTHER  DAILY MENU"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "OTHER  DAILY MENU "
+      }
+    ],
+    "description": "Mass edit cells in column occasion"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "occasion",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "OTHER  PRIVATE PARTY ",
+          "OTHER PRIVATE PARTY FERDINARD DE LESSEPS AND PARTY"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "OTHER  PRIVATE PARTY "
+      },
+      {
+        "from": [
+          "OTHER,UNIVERSITY ANNIVERSARY",
+          "OTHER,UNIVERSITY PAPER ANNUAL DINNER"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "OTHER,UNIVERSITY ANNIVERSARY"
+      },
+      {
+        "from": [
+          "OTHER  OPENING EVENT ",
+          "OTHER  OPENING OF HOTEL "
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "OTHER  OPENING EVENT "
+      },
+      {
+        "from": [
+          "OTHER  APPEARS TO BE EVENT PLANNED TO ENCOURAGE INDUSTRY AND COMMERCE TO RELOCATE TO CINCINNATI ",
+          "OTHER  APPEARS TO BE PRIVATE PARTY "
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "OTHER  PRIVATE PARTY "
+      },
+      {
+        "from": [
+          "OTHER  REGULAR MEETING ",
+          "OTHER  REGULAR MEETING OF A CARD PLAYING GROUP "
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "OTHER  REGULAR MEETING "
+      }
+    ],
+    "description": "Mass edit cells in column occasion"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "occasion",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "OTHER  PRIVATE PARTY ",
+          "OTHER  PRIVATE PARTY "
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "OTHER  PRIVATE PARTY "
+      }
+    ],
+    "description": "Mass edit cells in column occasion"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "occasion",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "OTHER  PRIVATE PARTY ",
+          "OTHER  PRIVATE DINNER PARTY ",
+          "OTHER  FAREWELL ",
+          "OTHER  PRIVATE "
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "OTHER  PRIVATE PARTY "
+      },
+      {
+        "from": [
+          "OTHER  DAILY MENU ",
+          "OTHER  DAILY MENU FOR RESTAURANT CHAIN ",
+          "OTHER  DAILY MENU ON BOARD SHIP "
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "OTHER  DAILY MENU "
+      },
+      {
+        "from": [
+          "OTHER,Banquet",
+          "OTHER  BANQUET & BALL "
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "OTHER  BANQUET & BALL "
+      },
+      {
+        "from": [
+          "OTHER  MUSIC FESTIVAL  ",
+          "OTHER  MUSICAL EVENT "
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "OTHER  MUSIC FESTIVAL  "
+      },
+      {
+        "from": [
+          "SECULAR HOLIDAY",
+          "SECULAR HOLIDAY'Y OF WAR ELIHU ROOT ATTENDS FOOTBALL GAME - U.OF PENN.VS WEST POINT"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "SECULAR HOLIDAY"
+      },
+      {
+        "from": [
+          "ETHNIC HOLIDAY",
+          "ETHNIC HOLIDAY,SAINT NICHOLAS DAY"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "ETHNIC HOLIDAY"
+      },
+      {
+        "from": [
+          "OTHER  DINNER DANCE ",
+          "OTHER  DINNER MEETING "
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "OTHER  DINNER DANCE "
+      },
+      {
+        "from": [
+          "OTHER  ANNUAL MEETING ",
+          "OTHER  ANNUAL ENTERTAINMENT EVENT "
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "OTHER  ANNUAL MEETING "
+      },
+      {
+        "from": [
+          "OTHER  ANNUAL EVENT ",
+          "OTHER  ANNUAL BANQUET "
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "OTHER  ANNUAL EVENT "
+      },
+      {
+        "from": [
+          "OTHER, SOCIAL ORG. DINNER",
+          "OTHER,SOCIAL CLUB ANNIVERSARY"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "OTHER, SOCIAL DINNER"
+      },
+      {
+        "from": [
+          "OTHER  ANNIVERSARY ",
+          "OTHER,UNIVERSITY ANNIVERSARY"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "OTHER  ANNIVERSARY "
+      }
+    ],
+    "description": "Mass edit cells in column occasion"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "occasion",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "ANNIVERSARY, COMPLEMENTARY",
+          "ANNIVERSARYERSARY DINNER",
+          "ANNIVERSARY 141ST"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "ANNIVERSARY, COMPLEMENTARY, DINNER"
+      }
+    ],
+    "description": "Mass edit cells in column occasion"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "occasion",
+    "expression": "value.trim()",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column occasion using expression value.trim()"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "occasion",
+    "expression": "value.replace(/\\s+/,' ')",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column occasion using expression value.replace(/\\s+/,' ')"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "occasion",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "0THER ANNIV"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "OTHER ANNIVERSARY"
+      }
+    ],
+    "description": "Mass edit cells in column occasion"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "occasion",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "0THER COMMERCIAL"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "OTHER COMMERCIAL"
+      }
+    ],
+    "description": "Mass edit cells in column occasion"
+  }
+]

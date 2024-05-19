@@ -1,0 +1,1206 @@
+[
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "venue",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "SOC;",
+          "SOC",
+          "[SOC?];",
+          "SOC(?);",
+          "SOC.",
+          "[SOC]",
+          "SOC?;",
+          "(SOC);",
+          "(SOC?)",
+          "(SOC?);",
+          "SOC (?);",
+          "SOC(?):",
+          "[?SOC];",
+          "[SOC;]",
+          "[SOC?]",
+          "[SOC];"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "SOC;"
+      },
+      {
+        "from": [
+          "GOVT;",
+          "GOVT(?);",
+          "GOV'T;",
+          "[GOVT?];",
+          "GOV'T",
+          "GOV'T.",
+          "GOVT",
+          "GOVT?;",
+          "[GOVT?]",
+          "[GOVT];"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "GOVT;"
+      },
+      {
+        "from": [
+          "COM",
+          "COM.",
+          "[COM]",
+          "(COM?);",
+          "COM(?);",
+          "COM.;",
+          "[COM?];",
+          "[COM}"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "COM"
+      },
+      {
+        "from": [
+          "PROF;",
+          "PROF",
+          "PROF(?);",
+          "PROF.",
+          "PROF?;",
+          "[PROF?];",
+          "[PROF]"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "PROF;"
+      },
+      {
+        "from": [
+          "EDUC;",
+          "EDUC",
+          "EDUC (?);",
+          "[EDUC];",
+          "(EDUC);",
+          "[EDUC?];"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "EDUC;"
+      },
+      {
+        "from": [
+          "POL;",
+          "POL",
+          "[POL]",
+          "POL.;",
+          "[POL?);",
+          "[POL?]"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "POL;"
+      },
+      {
+        "from": [
+          "NAV;",
+          "NAV; (?)",
+          "NAV.",
+          "NAV",
+          "NAV(?);"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "NAV;"
+      },
+      {
+        "from": [
+          "MIL;",
+          "MIL",
+          "MIL (?);",
+          "MIL.",
+          "[MIL?];"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "MIL;"
+      },
+      {
+        "from": [
+          "OTHER;(PRIVATE);",
+          "OTHER,(PRIVATE);",
+          "OTHER,PRIVATE",
+          "OTHER;PRIVATE;",
+          "[OTHER;PRIVATE];"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "OTHER;(PRIVATE);"
+      },
+      {
+        "from": [
+          "PATR;",
+          "PATR",
+          "PATR(?);",
+          "PATR."
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "PATR;"
+      },
+      {
+        "from": [
+          "COMM",
+          "COMM.",
+          "COMM;",
+          "COMM;."
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "COMM"
+      },
+      {
+        "from": [
+          "OTHER (PRIVATE PARTY);",
+          "OTHER (PRIVATE PARTY)",
+          "OTHER (PRIVATE PARTY?)",
+          "OTHER (PRIVATE PARTY?);"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "OTHER (PRIVATE PARTY);"
+      },
+      {
+        "from": [
+          "RELIG;",
+          "RELIG",
+          "RELIG?;"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "RELIG;"
+      },
+      {
+        "from": [
+          "OTHER (PRIVATE CLUB)",
+          "OTHER (PRIVATE CLUB);",
+          "OTHER [PRIVATE CLUB?]"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "OTHER (PRIVATE CLUB)"
+      },
+      {
+        "from": [
+          "GOV;",
+          "GOV.",
+          "[GOV];"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "GOV;"
+      },
+      {
+        "from": [
+          "NAVAL",
+          "NAVAL;",
+          "[NAVAL]"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "NAVAL"
+      },
+      {
+        "from": [
+          "SOCIAL",
+          "SOCIAL;",
+          "(SOCIAL?)"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "SOCIAL"
+      },
+      {
+        "from": [
+          "?",
+          "[?]"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "?"
+      },
+      {
+        "from": [
+          "POL; SOC;",
+          "SOC; POL;"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "POL; SOC;"
+      },
+      {
+        "from": [
+          "OTHER (CLUB);",
+          "OTHER (CLUB)"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "OTHER (CLUB);"
+      },
+      {
+        "from": [
+          "SOCIAL CLUB",
+          "SOCIAL CLUB?"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "SOCIAL CLUB"
+      },
+      {
+        "from": [
+          "OTHER",
+          "OTHER;"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "OTHER"
+      },
+      {
+        "from": [
+          "OTHER;(PERSONAL);",
+          "OTHER(PERSONAL);"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "OTHER;(PERSONAL);"
+      },
+      {
+        "from": [
+          "FOREIGN",
+          "FOREIGN;"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "FOREIGN"
+      },
+      {
+        "from": [
+          "OTHER (PRIVATE);",
+          "OTHER [PRIVATE];"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "OTHER (PRIVATE);"
+      },
+      {
+        "from": [
+          "MILITARY",
+          "[MILITARY]"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "MILITARY"
+      },
+      {
+        "from": [
+          "PAT;",
+          "PAT"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "PAT;"
+      },
+      {
+        "from": [
+          "(EDUCATIONAL)",
+          "EDUCATIONAL;"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "EDUCATIONAL"
+      },
+      {
+        "from": [
+          "PATRIOTIC",
+          "PATRIOTIC?"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "PATRIOTIC"
+      },
+      {
+        "from": [
+          "PRIVATE;",
+          "(PRIVATE);"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "PRIVATE;"
+      },
+      {
+        "from": [
+          "PRIVATE PARTY",
+          "PRIVATE PARTY;"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "PRIVATE PARTY"
+      }
+    ],
+    "description": "Mass edit cells in column venue"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "venue",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "SOC, MIL",
+          "SOC;MIL;"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "SOC, MIL"
+      },
+      {
+        "from": [
+          "OTHER (CLUB);",
+          "OTHER,Club"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "OTHER (CLUB);"
+      },
+      {
+        "from": [
+          "SOC,RELIG",
+          "SOC; RELIG;"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "SOC,RELIG"
+      },
+      {
+        "from": [
+          "FOREIGN,HOTEL",
+          "FOREIGN; HOTEL;"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "FOREIGN,HOTEL"
+      },
+      {
+        "from": [
+          "SOC, COM",
+          "SOC;COM;"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "SOC, COM"
+      },
+      {
+        "from": [
+          "SOCIAL CLUB",
+          "SOCIAL;(CLUB);"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "SOCIAL CLUB"
+      },
+      {
+        "from": [
+          "OTHER;(PRIVATE);",
+          "OTHER (PRIVATE);"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "OTHER;(PRIVATE);"
+      }
+    ],
+    "description": "Mass edit cells in column venue"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "venue",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "OTHER (PRIVATELY HOSTED DINNER PARTY);",
+          "OTHER (PRIVATELY HOSTED PARTY);",
+          "OTHER (PRIVATELY HOSTED BANQUET);",
+          "OTHER (PRIVATELY HOSTED DINNER);",
+          "OTHER (PRIVATELY HOSTED LUNCHEON);"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "OTHER (PRIVATELY HOSTED DINNER PARTY);"
+      },
+      {
+        "from": [
+          "OTHER (PRIVATE PARTY);",
+          "OTHER (PRIVATE PARTY BY SINGLE HOST);",
+          "OTHER (PRIVATE PARTY WITH INDIVIDUAL HOST);",
+          "OTHER (PRIVATE PARTY, SINGLE HOST);",
+          "OTHER (PRIVATE PATY)"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "OTHER (PRIVATE PARTY);"
+      },
+      {
+        "from": [
+          "OTHER (PRIVATE HOSTS);",
+          "OTHER (PRIVATE HOST);",
+          "OTHER (PRIVATE HOSTESS);"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "OTHER (PRIVATE HOSTS);"
+      },
+      {
+        "from": [
+          "COM",
+          "COMM",
+          "CAM;"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "COM"
+      },
+      {
+        "from": [
+          "COMMERCIAL",
+          "CMMERCIAL"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "COMMERCIAL"
+      },
+      {
+        "from": [
+          "OTHER (PRIVATE INDIVIDUAL HOST);",
+          "OTHER,PRIVATE INDIVIDUAL"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "OTHER (PRIVATE INDIVIDUAL HOST);"
+      },
+      {
+        "from": [
+          "OTHER (PRIVATE CLUB)",
+          "OTHER (PRIVATE GROUP OF FRIENDS);"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "OTHER (PRIVATE CLUB)"
+      },
+      {
+        "from": [
+          "OTHER (INDIVIDUAL);",
+          "OTHER (INDIVIDUALLY HOSTED PARTY);"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "OTHER (INDIVIDUAL);"
+      }
+    ],
+    "description": "Mass edit cells in column venue"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "venue",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "EDUC;",
+          "EDUS;"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "EDUC;"
+      }
+    ],
+    "description": "Mass edit cells in column venue"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "venue",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "OTHER (PRIVATE PARTY);",
+          "OTHER;(PRIVATE);",
+          "OTHER (PRIVATE CLUB)",
+          "OTHER (PRIVATELY HOSTED DINNER PARTY);",
+          "OTHER (PRIVATE HOSTS);",
+          "OTHER (PRIVATE INDIVIDUAL HOST);",
+          "OTHER (PRIVATE FRIENDS);"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "OTHER (PRIVATE PARTY);"
+      },
+      {
+        "from": [
+          "RESTAURANT",
+          "RESTAURANT,LUNCH ROOM,COFFEE SHOP",
+          "RESTAURANT,OTHER,URANT,OTHER,bar"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "RESTAURANT"
+      },
+      {
+        "from": [
+          "OTHER (SPORT);",
+          "OTHER (SPORTING CLUB);"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "OTHER (SPORT);"
+      },
+      {
+        "from": [
+          "OTHER (ROYAL KING);",
+          "OTHER (ROYAL HOST);"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "OTHER (ROYAL KING);"
+      }
+    ],
+    "description": "Mass edit cells in column venue"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "venue",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "GOVT;",
+          "GOV;"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "GOVT;"
+      }
+    ],
+    "description": "Mass edit cells in column venue"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "venue",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "POL; SOC;",
+          "SOC,POL"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "POL; SOC;"
+      },
+      {
+        "from": [
+          "FOREIGN",
+          "FOREIGNEIGN"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "FOREIGN"
+      },
+      {
+        "from": [
+          "SOC, COM",
+          "COM;SOC;"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "SOC, COM"
+      }
+    ],
+    "description": "Mass edit cells in column venue"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "venue",
+    "expression": "grel:value.replace(/[\\[?;\"\\]]/,\" \")",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column venue using expression grel:value.replace(/[\\[?;\"\\]]/,\" \")"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "venue",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "OTHER (INDIVIDUAL) ",
+          "PTHER (INDIVIDUAL ) "
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "OTHER (INDIVIDUAL) "
+      },
+      {
+        "from": [
+          "COMMERCIAL",
+          "COMMERCOA "
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "COMMERCIAL"
+      }
+    ],
+    "description": "Mass edit cells in column venue"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "venue",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "MILIT ",
+          "MILITARY"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "MILITARY"
+      }
+    ],
+    "description": "Mass edit cells in column venue"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "venue",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "OTHER (GROUP OF FRIENDS) ",
+          "OTHER (GROUP OF CITIZENS) "
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "OTHER (GROUP OF FRIENDS) "
+      },
+      {
+        "from": [
+          "FOREIGN,HOTEL,RESTAURANT",
+          "FOREIGN,HOTEL"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "FOREIGN,HOTEL,RESTAURANT"
+      }
+    ],
+    "description": "Mass edit cells in column venue"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "venue",
+    "expression": "grel:value.replace(/[()]/,\" \")",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column venue using expression grel:value.replace(/[()]/,\" \")"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "venue",
+    "expression": "value.trim()",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column venue using expression value.trim()"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "venue",
+    "expression": "value.replace(/\\s+/,' ')",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column venue using expression value.replace(/\\s+/,' ')"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "venue",
+    "expression": "grel:value.replace(/[:\"]/,\" \")",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column venue using expression grel:value.replace(/[:\"]/,\" \")"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "venue",
+    "expression": "value.trim()",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column venue using expression value.trim()"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "venue",
+    "expression": "value.replace(/\\s+/,' ')",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column venue using expression value.replace(/\\s+/,' ')"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "venue",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "OTHER PRIVATE PARTY",
+          "PRIVATE",
+          "PRIVATE PARTY"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "OTHER PRIVATE PARTY"
+      },
+      {
+        "from": [
+          "OTHER INDIVIDUAL",
+          "INDIVIDUAL"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "OTHER INDIVIDUAL"
+      },
+      {
+        "from": [
+          "OTHER PRIVATE PARTY",
+          "PRIVATE PARTY"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "OTHER PRIVATE PARTY"
+      },
+      {
+        "from": [
+          "SOCIAL",
+          "SOCIAL CLUB"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "SOCIAL"
+      },
+      {
+        "from": [
+          "FOREIGN,RESTAURANT",
+          "FOREIGN,HOTEL,RESTAURANT"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "FOREIGN,RESTAURANT"
+      },
+      {
+        "from": [
+          "PRIVATE",
+          "PRIVATE PARTY"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "PRIVATE"
+      }
+    ],
+    "description": "Mass edit cells in column venue"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "venue",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "OTHER CLUB",
+          "OTHER LONDON CLUB"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "OTHER CLUB"
+      },
+      {
+        "from": [
+          "RESTAURANT",
+          "HOTEL,RESTAURANT"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "HOTEL,RESTAURANT"
+      }
+    ],
+    "description": "Mass edit cells in column venue"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "venue",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "OTHER PRIVATE PARTY",
+          "PRIVATE",
+          "OTHER APPEARS TO BE A PRIVATE LUNCHEON PARTY",
+          "OTHER SINGLE HOST-PRIVATE PARTY",
+          "OTHER TWO PRIVATE HOSTS",
+          "POSSIBLY A PRIVATE HOST"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "OTHER PRIVATE PARTY"
+      },
+      {
+        "from": [
+          "OTHER ROYAL KING",
+          "OTHER BRITISH ROYAL FAMILY",
+          "OTHER HEAD OF ROYAL FAMILY",
+          "OTHER PRESUMABLY BRITISH ROYAL FAMILY",
+          "OTHER ROYAL FIGURE",
+          "OTHER ROYAL MONARCH"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "OTHER ROYAL"
+      },
+      {
+        "from": [
+          "OTHER PRIVATE PARTY",
+          "PRIVATE",
+          "OTHER PERSONAL",
+          "OTHER APPEARS TO BE A PRIVATE LUNCHEON PARTY",
+          "OTHER SINGLE HOST-PRIVATE PARTY",
+          "OTHER TWO PRIVATE HOSTS"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "OTHER PRIVATE PARTY"
+      },
+      {
+        "from": [
+          "OTHER PRIVATE PARTY",
+          "OTHER APPEARS TO BE A PRIVATE LUNCHEON PARTY",
+          "OTHER SINGLE HOST-PRIVATE PARTY",
+          "OTHER SINGLE TAX CLUB",
+          "OTHER TWO PRIVATE HOSTS",
+          "POSSIBLY A PRIVATE HOST"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "OTHER PRIVATE PARTY"
+      },
+      {
+        "from": [
+          "OTHER ROYAL KING",
+          "OTHER RESIDENCE",
+          "OTHER ROYAL FIGURE",
+          "OTHER ROYAL MONARCH",
+          "OTHER, ROYAL"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "OTHER ROYAL"
+      },
+      {
+        "from": [
+          "OTHER ROYAL KING",
+          "OTHER BRITISH ROYAL FAMILY",
+          "OTHER HEAD OF ROYAL FAMILY",
+          "OTHER ROYAL FIGURE",
+          "OTHER ROYAL MONARCH"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "OTHER ROYAL"
+      },
+      {
+        "from": [
+          "OTHER ROYAL KING",
+          "OTHER BRITISH ROYAL FAMILY",
+          "OTHER HEAD OF ROYAL FAMILY",
+          "OTHER PRESUMABLY BRITISH ROYAL FAMILY",
+          "OTHER ROYAL FIGURE"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "OTHER ROYAL"
+      },
+      {
+        "from": [
+          "OTHER PRIVATE PARTY",
+          "OTHER APPEARS TO BE A PRIVATE LUNCHEON PARTY",
+          "OTHER SINGLE HOST-PRIVATE PARTY",
+          "OTHER TWO PRIVATE HOSTS",
+          "POSSIBLY A PRIVATE HOST"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "OTHER PRIVATE PARTY"
+      },
+      {
+        "from": [
+          "OTHER PRIVATE PARTY",
+          "OTHER APPEARS TO BE A PRIVATE LUNCHEON PARTY",
+          "OTHER SINGLE HOST-PRIVATE PARTY",
+          "OTHER TWO PRIVATE HOSTS"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "OTHER PRIVATE PARTY"
+      },
+      {
+        "from": [
+          "FOREIGN,RESTAURANT",
+          "FOREIGN",
+          "FOREIGN,RAILROAD"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "FOREIGN,RESTAURANT"
+      }
+    ],
+    "description": "Mass edit cells in column venue"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "venue",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "GREEK LETTER FRATERNITY OR SORORITY",
+          "FRATERNITY"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "FRATERNITY OR SORORITY"
+      }
+    ],
+    "description": "Mass edit cells in column venue"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "venue",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "CULTURAL",
+          "OTHER INTERNATIONAL CULTURAL GROUP"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "CULTURAL"
+      }
+    ],
+    "description": "Mass edit cells in column venue"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "venue",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "EDUC"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "EDUCATIONAL"
+      }
+    ],
+    "description": "Mass edit cells in column venue"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "venue",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "MIL"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "MILITARY"
+      }
+    ],
+    "description": "Mass edit cells in column venue"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "venue",
+    "expression": "value.trim()",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column venue using expression value.trim()"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "venue",
+    "expression": "value.replace(/\\s+/,' ')",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column venue using expression value.replace(/\\s+/,' ')"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "venue",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "RELIG"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "RELIGIOUS"
+      }
+    ],
+    "description": "Mass edit cells in column venue"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "venue",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "REL"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "RELIGIOUS"
+      }
+    ],
+    "description": "Mass edit cells in column venue"
+  }
+]

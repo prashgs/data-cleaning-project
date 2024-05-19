@@ -1,0 +1,222 @@
+# @begin clean_name_and_date_workflow
+# @in input1_data  @uri file:demo_input.csv
+# @param local_authority_source  @uri file:demo_localDB.csv
+# @out name_val_log  @uri file:name_val_log.txt
+# @out output2_data  @uri file:demo_output_name_date_val.csv
+# @out date_val_log  @uri file:date_val_log.txt
+
+#     @begin validate_scientificName_field_of_data
+#     @param local_authority_source  @uri file:demo_localDB.csv
+#     @in input1_data  @uri file:demo_input.csv
+#     @out output1_data  @uri file:demo_output_name_val.csv
+#     @out name_val_log  @uri file:name_val_log.txt
+#     @out record_id_data  @uri file:record_id.txt
+
+#         @begin initialize_run
+#         @out name_val_log  @uri file:name_val_log.txt  @log {timestamp} Reading input records from {input1_data_file_name}
+#         @end initialize_run
+
+#         @begin read_scientificName
+#         @param local_authority_source  @uri file:demo_localDB.csv
+#         @call import sys
+#         @out local_authority_source_scientificName_lst
+#         @end read_scientificName
+
+#         @begin read_input1_data_records
+#         @in input1_data  @uri file:demo_input.csv
+#         @out original_scientificName  @as scientificName
+#         @out original_authorship  @as authorship
+#         @out RecordID
+#         @out original_others  @as others
+#         @out record_id_data  @uri file:record_id.txt
+#         @out name_val_log  @uri file:name_val_log.txt  @log {timestamp} Reading input record {RecordID}
+#         @end read_input1_data_records
+
+#         @begin check_empty_value
+#         @in original_scientificName  @as scientificName
+#         @out check_result
+#         @out original_scientificName  @as empty_scientificName
+#         @out original_scientificName  @as nonEmpty_scientificName
+#         @out name_val_log  @uri file:name_val_log.txt  @log {timestamp} Trying {check_type} {source_used} {match_method} match for validating {field_name}: {field_name_value}  @log {timestamp} Checking if {field_name} value is Empty: {check_result}
+#         @end check_empty_value
+
+#         @begin log_rejected_record
+#         @param RecordID
+#         @in original_scientificName  @as empty_scientificName
+#         @in check_result
+#         @out final_result
+#         @out rejected_record_count
+#         @out name_val_log  @uri file:name_val_log.txt  @log {timestamp} {final_result} record {RecordID}
+#         @end log_rejected_record
+
+#         @begin find_matching_local_authority_source_record
+#         @in original_scientificName  @as nonEmpty_scientificName
+#         @param local_authority_source_scientificName_lst
+#         @call exactmatch
+#         @call fieldmatch
+#         @out match_result
+#         @out matching_local_authority_source_record  @as exactMatching_local_authority_source_record
+#         @out matching_local_authority_source_record  @as fuzzyMatching_local_authority_source_record
+#         @out matching_local_authority_source_record  @as nonMatching_local_authority_source_record
+#         @out final_result
+#         @out matching_method
+#         @out name_val_log  @uri file:name_val_log.txt  @log {timestamp} Trying {check_type} {source_used} {match_method} match for validating {field_name}: {field_name_value}  @log {timestamp} {match_method} match was {match_result}, compliant with {source_used}: {compliant_result}.
+#         @end find_matching_local_authority_source_record
+
+#         @begin log_rejected_unmatching_record
+#         @param RecordID
+#         @in original_scientificName  @as nonEmpty_scientificName
+#         @in matching_local_authority_source_record  @as nonMatching_local_authority_source_record
+#         @out rejected_record_count
+#         @out name_val_log  @uri file:name_val_log.txt  @log {timestamp} {final_result} record {RecordID}
+#         @end log_rejected_unmatching_record
+
+#         @begin update_scientificName
+#         @in original_scientificName  @as nonEmpty_scientificName
+#         @param matching_local_authority_source_record  @as fuzzyMatching_local_authority_source_record
+#         @out updated_scientificName
+#         @end update_scientificName
+
+#         @begin update_authorship
+#         @param matching_local_authority_source_record  @as fuzzyMatching_local_authority_source_record
+#         @in original_authorship  @as authorship
+#         @out updated_authorship
+#         @end update_authorship
+
+#         @begin log_updated_record
+#         @in updated_scientificName
+#         @in updated_authorship
+#         @in original_authorship  @as authorship
+#         @in original_scientificName  @as nonEmpty_scientificName
+#         @out name_val_log  @uri file:name_val_log.txt  @log {timestamp} UPDATING {field_name} from {original_value} to {updated_value}
+#         @end log_updated_record
+
+#         @begin log_accepted_record
+#         @param RecordID
+#         @in final_result
+#         @param original_scientificName  @as nonEmpty_scientificName
+#         @out accepted_record_count
+#         @out name_val_log  @uri file:name_val_log.txt  @log {timestamp} {final_result} record {RecordID}
+#         @end log_accepted_record
+
+#         @begin write_output1_data
+#         @in original_others  @as others
+#         @in original_scientificName  @as empty_scientificName
+#         @in original_scientificName  @as nonEmpty_scientificName
+#         @in original_authorship  @as authorship
+#         @in updated_scientificName
+#         @in updated_authorship
+#         @out output1_data  @uri file:demo_output_name_val.csv
+#         @end write_output1_data
+
+#         @begin log_summary
+#         @in accepted_record_count
+#         @in rejected_record_count
+#         @out name_val_log  @uri file:name_val_log.txt  @log {timestamp} Wrote {accepted_record_count} ACCEPTED records to {output1_data_file_name}  @log {timestamp} Wrote {rejected_record_count} UNABLE-to-determine-validity records to {output1_data_file_name}
+#         @end log_summary
+
+#     @end validate_scientificName_field_of_data
+
+#     @begin validate_eventDate_field_of_data
+#     @in output1_data  @uri file:demo_output_name_val.csv
+#     @param record_id_data  @uri file:record_id.txt
+#     @out output2_data  @uri file:demo_output_name_date_val.csv
+#     @out date_val_log  @uri file:date_val_log.txt
+
+#         @begin initialize_run
+#         @out date_val_log  @uri file:date_val_log.txt  @log {timestamp} Reading input records from {input2_data_file_name}
+#         @end initialize_run
+
+#         @begin read_input2_data_records
+#         @in input2_data  @uri file:demo_output_name_val.csv
+#         @in record_id_data  @uri file:record_id.txt
+#         @out original2_eventDate  @as eventDate
+#         @out RecordID
+#         @out original2_others  @as others
+#         @out date_val_log  @uri file:date_val_log.txt  @log {timestamp} Reading input record {RecordID}
+#         @end read_input2_data_records
+
+#         @begin check_empty_value
+#         @in original2_eventDate  @as eventDate
+#         @out check_result
+#         @out original2_eventDate  @as empty_eventDate
+#         @out original2_eventDate  @as nonEmpty_eventDate
+#         @out date_val_log  @uri file:date_val_log.txt  @log {timestamp} Trying {check_type} {source_used} {match_method} match for validating {field_name}: {field_name_value}  @log {timestamp} Checking if {field_name} value is Empty: {check_result}
+#         @end check_empty_value
+
+#         @begin log_rejected_record
+#         @param RecordID
+#         @in original2_eventDate  @as empty_eventDate
+#         @in check_result
+#         @out final_result
+#         @out rejected2_record_count  @as rejected_record_count
+#         @out date_val_log  @uri file:date_val_log.txt  @log {timestamp} {final_result} record {RecordID}
+#         @end log_rejected_record
+
+#         @begin check_ISO_compliant
+#         @in original2_eventDate  @as nonEmpty_eventDate
+#         @out match_result
+#         @out original2_eventDate  @as compliant_eventDate
+#         @out original2_eventDate  @as nonCompliant_eventDate
+#         @out date_val_log  @uri file:date_val_log.txt  @log {timestamp} {match_method} match was {match_result}, compliant with {source_used}: {match_result}.
+#         @end check_ISO_compliant
+
+#         @begin update_eventDate
+#         @in original2_eventDate  @as nonCompliant_eventDate
+#         @in match_result
+#         @out updated2_eventDate  @as updated_eventDate
+#         @out date_val_log  @uri file:date_val_log.txt  @log {timestamp} UPDATING {field_name} from {original_value} to {updated_value}
+#         @end update_eventDate
+
+#         @begin log_accepted_record
+#         @param RecordID
+#         @in updated2_eventDate  @as updated_eventDate
+#         @in original2_eventDate  @as compliant_eventDate
+#         @out final_result
+#         @out accepted2_record_count  @as accepted_record_count
+#         @out date_val_log  @uri file:date_val_log.txt  @log {timestamp} {final_result} record {RecordID}
+#         @end log_accepted_record
+
+#         @begin write_output2_data
+#         @in original2_others  @as others
+#         @in updated2_eventDate  @as updated_eventDate
+#         @in original2_eventDate  @as compliant_eventDate
+#         @in original2_eventDate  @as empty_eventDate
+#         @out output2_data  @uri file:demo_output_name_date_val.csv
+#         @end write_output2_data
+
+#         @begin log_summary
+#         @in accepted2_record_count  @as accepted_record_count
+#         @in rejected2_record_count  @as rejected_record_count
+#         @out date_val_log  @uri file:date_val_log.txt  @log {timestamp} Wrote {accepted2_record_count} accepted records to {output2_data_file_name}  @log {timestamp} Wrote {rejected2_record_count} UNABLE-to-determine-validity records to {rejected2_data_file_name}
+#         @end log_summary
+
+#     @end validate_eventDate_field_of_data
+
+# @end clean_name_and_date_workflow
+
+#     @begin exactmatch
+#     @param lst
+#     @param label_str
+#     @return key
+#     @return None
+#     @end exactmatch
+
+#     @begin fuzzymatch
+#     @param str1
+#     @param str2
+#     @return [match_result, str1[x_longest - longest: x_longest], x_longest - longest]
+#     @end fuzzymatch
+
+#     @begin fieldmatch
+#     @param lst
+#     @param str2
+#     @call fuzzymatch
+#     @return match_str
+#     @end fieldmatch
+
+#     @begin timestamp
+#     @param message
+#     @return timestamp_message
+#     @end timestamp
+
